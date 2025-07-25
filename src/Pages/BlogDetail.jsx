@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import Header from '../Components/Core/Header/Header_New';
 import { ArrowLeft } from 'lucide-react';
@@ -11,6 +11,18 @@ const BlogDetail = () => {
     const navigate = useNavigate();
     // Find the specific blog post from the imported array that matches the ID from the URL
     const post = blogPosts.find(p => p.id === parseInt(id));
+    // State to track window width for responsive design
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    // Effect to update window width on resize
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+        window.addEventListener('resize', handleResize);
+        // Cleanup listener on component unmount
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     // If no post with that ID is found, display a message.
     if (!post) {
@@ -27,6 +39,34 @@ const BlogDetail = () => {
             </div>
         );
     }
+    
+    // Function to get responsive styles
+    const getResponsiveStyles = () => {
+        const isMobile = windowWidth < 768;
+
+        return {
+            hero: {
+                height: isMobile ? '250px' : '450px',
+            },
+            mainContent: {
+                padding: isMobile ? '4rem 1rem 2rem' : '6rem 2rem 3rem',
+            },
+            title: {
+                fontSize: isMobile ? '1.8rem' : '2.5rem',
+            },
+            mainImage: {
+                height: isMobile ? 'auto' : '250px',
+            },
+            linkedinImage: {
+                height: isMobile ? 'auto' : '150px',
+            },
+            secondaryHeading: {
+                fontSize: isMobile ? '1.1rem' : '1.25rem',
+            },
+        };
+    };
+    
+    const responsive = getResponsiveStyles();
 
     // If the post is found, render the detail page.
     return (
@@ -35,22 +75,22 @@ const BlogDetail = () => {
             <img src="/Blog/line.png" alt="divider" style={styles.lineDivider} />
             
             {/* Hero banner section */}
-            <div style={styles.hero}>
+            <div style={{...styles.hero, ...responsive.hero}}>
                 {/* The arrow pattern is now inside the hero container for positioning */}
                 <img src="/Blog/arrow_pattern.png" alt="arrow pattern" style={styles.arrowPattern} />
             </div>
 
-            <main style={styles.mainContent}>
-                <h1 style={styles.title}>{post.alt}</h1>
-                <img src={post.imageUrl} alt={post.alt} style={styles.mainImage} />
+            <main style={{...styles.mainContent, ...responsive.mainContent}}>
+                <h1 style={{...styles.title, ...responsive.title}}>{post.alt}</h1>
+                <img src={post.imageUrl} alt={post.alt} style={{...styles.mainImage, ...responsive.mainImage}} />
 
                 {/* LinkedIn Image */}
-                <img src="/Blog/linkedin.png" alt="linkedin" style={styles.linkedinImage} />
+                <img src="/Blog/linkedin.png" alt="linkedin" style={{...styles.linkedinImage, ...responsive.linkedinImage}} />
 
                 {/* Meta container with author and social icons has been removed */}
 
                 <article style={styles.blogContent}>
-                    <h2 style={styles.secondaryHeading}>EXPLORING THE FUTURE OF SPACE TECHNOLOGY: INSIGHTS FROM A LEADING CEO</h2>
+                    <h2 style={{...styles.secondaryHeading, ...responsive.secondaryHeading}}>EXPLORING THE FUTURE OF SPACE TECHNOLOGY: INSIGHTS FROM A LEADING CEO</h2>
                     {/* The full content for the blog post is now displayed from your data file */}
                     <p>{post.content}</p>
                 </article>
@@ -79,7 +119,6 @@ const styles = {
     },
     hero: {
         position: 'relative', // Needed for absolute positioning of the arrow
-        height: '450px',
         width: '100%',
         backgroundImage: "url('/Blog/blog 1.png')",
         backgroundSize: 'cover',
@@ -97,10 +136,8 @@ const styles = {
     mainContent: {
         maxWidth: '900px',
         margin: '0 auto',
-        padding: '6rem 2rem 3rem', // Increased top padding to make space for the arrow
     },
     title: {
-        fontSize: '2.5rem',
         fontWeight: 'bold',
         textAlign: 'center',
         marginBottom: '2rem',
@@ -108,7 +145,6 @@ const styles = {
     },
     mainImage: {
         width: '100%',
-        height: '250px', // Made the image smaller
         borderRadius: '8px',
         marginBottom: '2rem',
         display: 'block',
@@ -119,12 +155,10 @@ const styles = {
         display: 'block',
         margin: '0 auto 2rem', // Center the image
         width: '100%', // Larger, rectangular image
-        height: '150px', 
         objectFit: 'cover',
         borderRadius: '8px',
     },
     secondaryHeading: {
-        fontSize: '1.25rem', // Made the heading smaller
         fontWeight: 'bold',
         color: '#000',
         marginBottom: '1.5rem',

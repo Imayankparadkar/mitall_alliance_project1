@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 // Corrected the import path to use your new Header component
 import Header from '../Components/Core/Header/Header_New';
 // Import useNavigate to handle navigation
@@ -9,10 +9,52 @@ const Blogs = () => {
   // State to track which card is being hovered over
   const [hoveredCardId, setHoveredCardId] = useState(null);
   const navigate = useNavigate();
+  // State to track window width
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const handleCardClick = (id) => {
     navigate(`/blog/${id}`);
   };
+
+  // Effect to update window width on resize
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    window.addEventListener('resize', handleResize);
+    // Cleanup listener on component unmount
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  // Function to get responsive styles
+  const getResponsiveStyles = () => {
+    const isMobile = windowWidth < 768;
+    const isTablet = windowWidth >= 768 && windowWidth < 1024;
+
+    const responsiveStyles = {
+      hero: {
+        height: isMobile ? '300px' : '450px', // Adjusted to new base height
+      },
+      heroTitle: {
+        fontSize: isMobile ? '4rem' : '8rem',
+      },
+      heroSubtitle: {
+        fontSize: isMobile ? '1rem' : '1.5rem',
+      },
+      mainContent: {
+        padding: isMobile ? '6rem 1rem 2rem' : '8rem 2rem 4rem',
+      },
+      grid: {
+        gridTemplateColumns: isMobile ? '1fr' : (isTablet ? 'repeat(2, 1fr)' : 'repeat(3, 1fr)'),
+      },
+      card: {
+        width: '100%', // Full width on all screen sizes, grid handles the layout
+      }
+    };
+    return responsiveStyles;
+  };
+
+  const responsive = getResponsiveStyles();
 
   return (
     <div style={styles.pageContainer}>
@@ -20,46 +62,44 @@ const Blogs = () => {
       {/* Line divider image added between Header and Hero */}
       <img src="/Blog/line.png" alt="divider" style={styles.lineDivider} />
 
-      <div style={styles.hero}>
-        {/* <div style={styles.heroText}>
-            <h1 style={styles.heroTitle}>BLOGS</h1>
-            <p style={styles.heroSubtitle}>Empowering Youth, Bridging Academia and Industry</p>
-        </div> */}
+      <div style={{...styles.hero, ...responsive.hero}}>
+        
         <img src="/Blog/arrow_pattern.png" alt="arrow pattern" style={styles.arrowPattern} />
       </div>
 
-      <main style={styles.mainContent}>
+      <main style={{...styles.mainContent, ...responsive.mainContent}}>
         {/* Title for the blog grid */}
         <div style={styles.sectionTitleContainer}>
             <h2 style={styles.sectionTitle}>BLOGS</h2>
             <div style={styles.titleUnderline}></div>
         </div>
         
-        <div style={styles.grid}>
+        <div style={{...styles.grid, ...responsive.grid}}>
           {blogPosts.map(post => {
-            // Combine base and hover styles based on the current state
-            const cardStyle = {
-              ...styles.card,
-              ...(post.id === hoveredCardId ? styles.cardHover : {}),
-            };
+            // Combine base and hover styles based on the current state
+            const cardStyle = {
+              ...styles.card,
+              ...responsive.card,
+              ...(post.id === hoveredCardId ? styles.cardHover : {}),
+            };
 
-            return (
-              <div 
-                key={post.id} 
-                style={cardStyle} 
-                onClick={() => handleCardClick(post.id)}
-                // Set the hovered card ID on mouse enter
-                onMouseEnter={() => setHoveredCardId(post.id)}
-                // Reset the hovered card ID on mouse leave
-                onMouseLeave={() => setHoveredCardId(null)}
-              >
-                <img src={post.imageUrl} alt={post.alt} style={styles.cardImage} />
-                <div style={styles.cardTextContainer}>
-                  <h3 style={styles.cardTitle}>{post.alt}</h3>
-                </div>
-              </div>
-            );
-          })}
+            return (
+              <div 
+                key={post.id} 
+                style={cardStyle} 
+                onClick={() => handleCardClick(post.id)}
+                // Set the hovered card ID on mouse enter
+                onMouseEnter={() => setHoveredCardId(post.id)}
+                // Reset the hovered card ID on mouse leave
+                onMouseLeave={() => setHoveredCardId(null)}
+              >
+                <img src={post.imageUrl} alt={post.alt} style={styles.cardImage} />
+                <div style={styles.cardTextContainer}>
+                  <h3 style={styles.cardTitle}>{post.alt}</h3>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </main>
     </div>
@@ -78,17 +118,14 @@ const styles = {
   },
   hero: {
     position: 'relative',
-    height: '600px',
     width: '100%',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundImage: "url('Blog/blog 1.png')", 
-    backgroundSize: 'contain',
+    backgroundImage: "url('/Blog/blog 1.png')", 
+    backgroundSize: 'cover',
     backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-    backgroundColor: 'black',
-    color: '#FFFFFF',
+    color: '#FFFFFF',
   },
   heroText: {
     position: 'relative',
@@ -96,14 +133,12 @@ const styles = {
     textAlign: 'center',
   },
   heroTitle: {
-    fontSize: '8rem',
     fontWeight: '900',
     margin: '0',
     textTransform: 'uppercase',
     textShadow: '3px 3px 8px rgba(0, 0, 0, 0.7)',
   },
   heroSubtitle: {
-    fontSize: '1.5rem',
     marginTop: '0.5rem',
     fontWeight: 400,
     textShadow: '2px 2px 6px rgba(0, 0, 0, 0.7)',
@@ -118,7 +153,6 @@ const styles = {
     zIndex: 2,
   },
   mainContent: {
-    padding: '8rem 2rem 4rem',
     backgroundColor: 'transparent',
     margin: '0 auto',
     maxWidth: '1600px',
@@ -142,9 +176,7 @@ const styles = {
       margin: '0 auto',
   },
   grid: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'center',
+    display: 'grid',
     gap: '2.5rem',
     maxWidth: '1200px',
     margin: '0 auto',
@@ -158,17 +190,15 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     height: 'auto',
-    width: 'calc(33.333% - 2.5rem)',
-    flexGrow: 0,
-    cursor: 'pointer',
-    // Added transition for smooth animation
-    transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',
+    cursor: 'pointer',
+    // Added transition for smooth animation
+    transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',
   },
-  cardHover: {
-    // This style is applied on hover
-    transform: 'scale(1.05)',
-    boxShadow: '0 10px 20px rgba(0, 0, 0, 0.15)',
-  },
+  cardHover: {
+    // This style is applied on hover
+    transform: 'scale(1.05)',
+    boxShadow: '0 10px 20px rgba(0, 0, 0, 0.15)',
+  },
   cardImage: {
     width: '100%',
     height: 'auto',
