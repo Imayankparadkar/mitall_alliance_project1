@@ -21,10 +21,10 @@ const Blogs = () => {
       <img src="/Blog/line.png" alt="divider" style={styles.lineDivider} />
 
       <div style={styles.hero}>
-        <div style={styles.heroText}>
+        {/* <div style={styles.heroText}>
             <h1 style={styles.heroTitle}>BLOGS</h1>
             <p style={styles.heroSubtitle}>Empowering Youth, Bridging Academia and Industry</p>
-        </div>
+        </div> */}
         <img src="/Blog/arrow_pattern.png" alt="arrow pattern" style={styles.arrowPattern} />
       </div>
 
