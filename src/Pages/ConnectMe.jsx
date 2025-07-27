@@ -15,11 +15,11 @@ const ConnectMe = () => {
         <div>
             {/* Divider */}
             <div>
-                <img
+                {/* <img
                     src="/Core/Divider.png"
                     className="h-4 sm:scale-75 -mt-[2px] sm:-mt-[7px]"
                     alt="Divider"
-                />
+                /> */}
             </div>
 
             {/* Main Section */}
