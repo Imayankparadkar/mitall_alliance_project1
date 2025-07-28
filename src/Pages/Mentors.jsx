@@ -52,22 +52,10 @@ const Mentors = () => {
         {/* Main container */}
         <div>
           {/* Top Image Banner */}
-          <div className="text-center mb-16">
-            <img
-              src="/Mentor/line.png"
-              alt="Decorative line"
-              className="inline-block"
-            />
-            <img
-              src="/Mentor/mentor1.png"
-              alt="Mentor 1"
-              className="inline-block"
-            />
-            <img
-              src="/Mentor/mentor2.png"
-              alt="Mentor 2"
-              className="inline-block"
-            />
+          <div className="flex flex-wrap justify-center items-center mb-16">
+            <img src="/Mentor/line.png" />
+            <img src="/Mentor/mentor1.png" />
+            <img src="/Mentor/mentor2.png" />
           </div>
 
           {/* Main Heading */}
