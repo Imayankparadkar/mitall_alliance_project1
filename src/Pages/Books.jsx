@@ -26,6 +26,7 @@ const Books = () => {
       <img 
         src="/Books/book2.png" 
         alt="book2" 
+        className="mb-12"
         onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/1200x400/cccccc/000000?text=Book+2+Image'; }}
       />
 
@@ -46,7 +47,7 @@ const Books = () => {
           </div>
 
           {/* 4. Main Book Section based on Screenshot */}
-          <section className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 mb-16">
+          <section className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 mb-32">
 
             {/* Book Image Column */}
             <div className="w-full lg:w-2/5 flex justify-center">
@@ -106,7 +107,7 @@ const Books = () => {
                 >
                   BUY BOOK
                 </button>
-                <button className="border-2 border-yellow-500 text-yellow-600 font-bold py-3 px-8 rounded-full hover:bg-yellow-50 transition duration-300 shadow-md">
+                <button className="border-2 border-yellow-500 text-yellow-600 font-bold py-3 px-8 rounded-full hover:bg-yellow-100 transition duration-300 shadow-md">
                   DOWNLOAD FREE SAMPLE
                 </button>
               </div>
