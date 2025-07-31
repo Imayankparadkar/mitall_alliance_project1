@@ -3,28 +3,30 @@ import { MessageSquareText } from "lucide-react";
 
 const Footer = () => {
     return (
-        <footer className="bg-black text-white py-10 px-4 sm:px-20 relative">
+        <footer className="bg-black text-white py-10 px-6 sm:px-12 md:px-16 lg:px-20 relative font-sans">
 
-            <div className="absolute top-5 right-5 sm:top-10 sm:right-10">
-                <div className="bg-[#D0A151] rounded-lg w-12 h-12 flex items-center justify-center cursor-pointer hover:scale-105 transition">
-
-
-                    <MessageSquareText className="text-black " />
+            {/* Chat Icon - Positioned absolutely and scales nicely */}
+            <div className="absolute top-6 right-6 md:top-10 md:right-10">
+                <div className="bg-[#D0A151] rounded-lg w-12 h-12 flex items-center justify-center cursor-pointer hover:scale-110 transition-transform duration-300">
+                    <MessageSquareText className="text-black w-6 h-6" />
                 </div>
             </div>
 
+            {/* Main Footer Grid - Adjusts columns for different screen sizes for better stability */}
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-10 xl:gap-8">
 
-            <div className="grid grid-cols-1 md:grid-cols-5 gap-8 sm:px-20">
-                {/* About Section */}
-                <div className="md:col-span-2">
-                    <div className="flex items-center gap-2 mb-4">
-                        <span className="text-[#CC9A48] text-2xl">
+                {/* About Section - Spans full width on medium screens, 2 columns on large screens */}
+                <div className="md:col-span-3 lg:col-span-2">
+                    <div className="flex items-center gap-3 mb-4">
+                        {/* SVG Logo */}
+                        <span className="text-[#CC9A48]">
                             <svg
-                                width="52"
+                                width="40"
                                 height="40"
                                 viewBox="0 0 52 40"
                                 fill="none"
                                 xmlns="http://www.w3.org/2000/svg"
+                                aria-label="Sarthak Mittal Logo"
                             >
                                 <g clipPath="url(#clip0_376_2845)">
                                     <path
@@ -49,9 +51,10 @@ const Footer = () => {
                                 </defs>
                             </svg>
                         </span>
-                        <h2 className="text-[#CC9A48] font-bold text-lg">Sarthak Mittal</h2>
+                        <h2 className="text-[#CC9A48] font-bold text-xl">Sarthak Mittal</h2>
                     </div>
-                    <p className="text-gray-300 text-sm text-justify leading-relaxed sm:w-[300px]">
+                    {/* Removed fixed width for a responsive max-width */}
+                    <p className="text-gray-300 text-sm text-justify leading-relaxed max-w-md">
                         Sarthak Group of Companies provides the best business solutions,
                         helping businesses thrive through strategic and technical
                         development. Led by Mr. Sarthak Mittal, a top-tier business
@@ -60,13 +63,13 @@ const Footer = () => {
                     </p>
                 </div>
 
-
+                {/* Pages Links */}
                 <div>
                     <h3 className="text-lg font-bold mb-4">Pages</h3>
-                    <ul className="space-y-2 text-gray-300 text-sm">
+                    <ul className="space-y-3 text-gray-300 text-sm">
                         {["Home", "Services", "Courses", "Blog Insight", "Contact", "Term & Condition"].map(
-                            (page, i) => (
-                                <li key={i} className="hover:text-[#CC9A48] cursor-pointer">
+                            (page) => (
+                                <li key={page} className="hover:text-[#CC9A48] transition-colors duration-300 cursor-pointer">
                                     {page}
                                 </li>
                             )
@@ -74,45 +77,45 @@ const Footer = () => {
                     </ul>
                 </div>
 
-
+                {/* Company Links */}
                 <div>
                     <h3 className="text-lg font-bold mb-4">Company</h3>
-                    <ul className="space-y-2 text-gray-300 text-sm">
-                        {["Careers", "Support", "Price & Plans"].map((company, i) => (
-                            <li key={i} className="hover:text-[#CC9A48] cursor-pointer">
-                                {company}
+                    <ul className="space-y-3 text-gray-300 text-sm">
+                        {["Careers", "Support", "Price & Plans"].map((link) => (
+                            <li key={link} className="hover:text-[#CC9A48] transition-colors duration-300 cursor-pointer">
+                                {link}
                             </li>
                         ))}
                     </ul>
                 </div>
 
-
+                {/* Get In Touch Section */}
                 <div>
                     <h3 className="text-lg font-bold mb-4">Get In Touch</h3>
-                    <div className="text-sm space-y-3">
+                    <div className="text-sm space-y-4">
                         <div>
-                            <p className="font-bold">Head Office</p>
+                            <p className="font-bold text-white">Head Office</p>
                             <p className="text-gray-300">Vijay Nagar Part II, Indore, INDIA</p>
                         </div>
                         <div>
-                            <p className="font-bold">Sub Office</p>
+                            <p className="font-bold text-white">Sub Office</p>
                             <p className="text-gray-300">Indore, INDIA</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-
-            <div className="border-t border-gray-700 mt-10 pt-5 flex flex-row space-x-30 sm:justify-between items-center">
-                <p className="text-[10px] sm:text-sm text-gray-300">
-                    Copyright By ©{" "}
-                    <span className="text-[#CC9A48] font-semibold">Sarthak Mittal</span> -{" "}
-                    {new Date().getFullYear()}
+            {/* Bottom Footer Section - Stacks on mobile, row on larger screens */}
+            <div className="border-t border-gray-700 mt-10 pt-6 flex flex-col-reverse sm:flex-row sm:justify-between items-center gap-6">
+                <p className="text-xs sm:text-sm text-gray-400 text-center sm:text-left">
+                    Copyright © {new Date().getFullYear()} {" "}
+                    <span className="text-[#CC9A48] font-semibold">Sarthak Mittal</span>. All Rights Reserved.
                 </p>
+                {/* Responsive image sizing */}
                 <img
                     src="/Core/sign.png"
                     alt="Signature"
-                    className="mt-4 sm:scale-200 scale-300 sm:mt-0 h-10  sm:h-20"
+                    className="mt-4 sm:scale-200 scale-250 sm:mt-0 h-10  sm:h-20"
                 />
             </div>
         </footer>
