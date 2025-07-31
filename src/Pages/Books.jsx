@@ -107,7 +107,7 @@ const Books = () => {
                 >
                   BUY BOOK
                 </button>
-                <button className="border-2 border-yellow-500 text-yellow-600 font-bold py-3 px-8 rounded-full hover:bg-yellow-100 transition duration-300 shadow-md">
+                <button className="border-2 border-yellow-500 text-yellow-600 font-bold py-3 px-8 rounded-full hover:bg-yellow-50 transition duration-300 shadow-md">
                   DOWNLOAD FREE SAMPLE
                 </button>
               </div>
