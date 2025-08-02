@@ -53,7 +53,7 @@ const PodcastCard = ({ id, imgSrc, title, description, host, date }) => (
       {/* A subtle indicator can be added for better UX */}
       <div className="mt-auto text-right">
         <span className="text-sm font-semibold text-[rgba(208,161,81,1)]">
-          Listen Now →
+          Read More →
         </span>
       </div>
     </div>
