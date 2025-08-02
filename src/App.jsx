@@ -24,7 +24,8 @@ import TedxSection from './Pages/TedxSection';
 
 // Import REAL pages
 import BlogsPage from './Pages/Blogs';
-import BlogDetail from './Pages/BlogDetail'; // <-- IMPORT THE NEW DETAIL COMPONENT
+import BlogDetail from './Pages/BlogDetail';
+import PodcastsDetail from './Pages/PodcastsDetail';
 import EventsPage from './Pages/Events';
 import PodcastsPage from './Pages/Podcasts';
 import PricingPage from './Pages/Pricing';
@@ -34,6 +35,7 @@ import HistoryPage from './Pages/History';
 import CareersPage from './Pages/Careers';
 import FAQsPage from './Pages/FAQs';
 
+// This component aggregates all sections for the single-page style homepage.
 const HomePage = () => (
   <>
     <Home />
@@ -60,12 +62,25 @@ const App = () => {
   return (
     <Router>
       <div>
+        {/* The <Routes> component manages all the different URL paths. */}
         <Routes>
+          {/* Main landing page */}
           <Route path="/" element={<HomePage />} />
+          
+          {/* Blog pages */}
           <Route path="/blogs" element={<BlogsPage />} />
-          <Route path="/blog/:id" element={<BlogDetail />} /> {/* <-- ADD THIS NEW ROUTE */}
-          <Route path="/events" element={<EventsPage />} />
+          <Route path="/blog/:id" element={<BlogDetail />} />
+          
+          {/* Podcast pages */}
           <Route path="/podcasts" element={<PodcastsPage />} />
+          {/* THIS IS THE NEWLY ADDED ROUTE.
+            It listens for a URL like "/podcasts/1" or "/podcasts/2"
+            and renders the PodcastsDetail component, passing the "id" as a parameter.
+          */}
+          <Route path="/podcasts/:id" element={<PodcastsDetail />} />
+
+          {/* Other application pages */}
+          <Route path="/events" element={<EventsPage />} />
           <Route path="/pricing" element={<PricingPage />} />
           <Route path="/books" element={<BooksPage />} />
           <Route path="/mentors" element={<MentorsPage />} />
@@ -74,6 +89,8 @@ const App = () => {
           <Route path="/faqs" element={<FAQsPage />} />
           <Route path="/contact" element={<ConnectMe />} />
         </Routes>
+        
+        {/* The Footer appears on every page */}
         <Footer />
       </div>
     </Router>
