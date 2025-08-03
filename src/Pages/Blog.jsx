@@ -11,6 +11,8 @@ const Blog = () => {
                         className="absolute top-0 w-full"
                     />
                 </div>
+
+                <br/>
                 <div className="text-center max-w-2xl mx-auto ">
 
                     <div>

@@ -78,7 +78,7 @@ const SuccessMatrix = () => {
         {
             id: 2,
             polygon: "/SuccessMatrix/Polygon.png",
-            image: "/SuccessMatrix/c1.png",
+            image: "/SuccessMatrix/c2.png",
             title: ["15,000,000+ People", "Reached"],
             description:
                 "Over 1.5 Crore cumulative digital impressions across platforms  through branding, education, and marketing campaigns.",
@@ -86,7 +86,7 @@ const SuccessMatrix = () => {
         {
             id: 3,
             polygon: "/SuccessMatrix/Polygon.png",
-            image: "/SuccessMatrix/c1.png",
+            image: "/SuccessMatrix/c3.png",
             title: ["12,000+ Newsletter", "Subscribers"],
             description:
                 "Consistent audience consuming insights, updates, and strategies  via high-engagement email campaigns.",
@@ -94,7 +94,7 @@ const SuccessMatrix = () => {
         {
             id: 4,
             polygon: "/SuccessMatrix/Polygon.png",
-            image: "/SuccessMatrix/c1.png",
+            image: "/SuccessMatrix/c4.png",
             title: ["50,000+ Students", "Impacted"],
             description:
                 "Learners reached through workshops, mentorships, webinars,  and academic outreach programs.",
@@ -105,7 +105,7 @@ const SuccessMatrix = () => {
         {
             id: 1,
             polygon: "/SuccessMatrix/Polygon-8.png",
-            image: "/SuccessMatrix/c1.png",
+            image: "/SuccessMatrix/c6.png",
             title: ["3,600+ YouTube", "Subscribers"],
             description:
                 "Educational video content creating continuous impact and  community growth.",
@@ -113,7 +113,7 @@ const SuccessMatrix = () => {
         {
             id: 2,
             polygon: "/SuccessMatrix/Polygon-8.png",
-            image: "/SuccessMatrix/c1.png",
+            image: "/SuccessMatrix/c7.png",
             title: ["75+ Global Projects", "Delivered"],
             description:
                 "Successful branding, digital, and consulting projects executed  across India, USA, UK, Spain, Dubai, and Australia.",
@@ -121,7 +121,7 @@ const SuccessMatrix = () => {
         {
             id: 3,
             polygon: "/SuccessMatrix/Polygon-8.png",
-            image: "/SuccessMatrix/c1.png",
+            image: "/SuccessMatrix/c8.png",
             title: ["2 Incorporated", "Companies"],
             description:
                 "Leading ventures in brandtech, digital transformation, and  consulting.",
@@ -129,7 +129,7 @@ const SuccessMatrix = () => {
         {
             id: 4,
             polygon: "/SuccessMatrix/Polygon-8.png",
-            image: "/SuccessMatrix/c1.png",
+            image: "/SuccessMatrix/c9.png",
             title: ["1 Community", "Platform (Badverse)"],
             description:
                 "Empowering solopreneurs, students, and creators with  mentorship and digital tools.",
@@ -137,7 +137,7 @@ const SuccessMatrix = () => {
         {
             id: 5,
             polygon: "/SuccessMatrix/Polygon-8.png",
-            image: "/SuccessMatrix/c1.png",
+            image: "/SuccessMatrix/c10.png",
             title: ["1 Handicraft Firm", "(Anjucreations)"],
             description:
                 "Promoting Indian craftsmanship globally through sustainable and  ethical commerce.",

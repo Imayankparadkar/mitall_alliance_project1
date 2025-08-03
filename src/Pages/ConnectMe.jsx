@@ -2,13 +2,13 @@ import React from "react";
 
 const ConnectMe = () => {
     const socialLogos = [
-        { id: 1, image: "/Connect/l1.png", alt: "LinkedIn", link: "https://linkedin.com" },
-        { id: 2, image: "/Connect/l2.png", alt: "Twitter", link: "https://twitter.com" },
-        { id: 3, image: "/Connect/l3.png", alt: "Instagram", link: "https://instagram.com" },
-        { id: 4, image: "/Connect/l4.png", alt: "YouTube", link: "https://youtube.com" },
-        { id: 5, image: "/Connect/l5.png", alt: "Website", link: "https://example.com" },
-        { id: 6, image: "/Connect/l6.png", alt: "Facebook", link: "https://facebook.com" },
-        { id: 7, image: "/Connect/l7.png", alt: "GitHub", link: "https://github.com" },
+        { id: 1, image: "/Connect/l1.png", alt: "Google Podcast", link: "https://www.youtube.com/playlist?list=PLx4tPWYNcyYi31Mh944M-rj-CySXPEPv_" },
+        { id: 2, image: "/Connect/l2.png", alt: "Spotify", link: "https://open.spotify.com/show/2xylhP1PG90whlBakdpJzv" },
+        { id: 3, image: "/Connect/l3.png", alt: "YouTube", link: "https://www.youtube.com/@mittalspeaks" },
+        { id: 4, image: "/Connect/l4.png", alt: "LinkedIn", link: "https://www.linkedin.com/in/sarthak-cxo/" },
+        { id: 5, image: "/Connect/l5.png", alt: "Xing", link: "https://www.xing.com/profile/Sarthak_MittalCEO" },
+        { id: 6, image: "/Connect/l6.png", alt: "Twitter", link: "https://x.com/JokemonY" },
+        { id: 7, image: "/Connect/l7.png", alt: "Instagram", link: "https://www.instagram.com/ceosaarthakmittal/?igsh=ZGV4MzR6aXFmanAy#" },
     ];
 
     return (

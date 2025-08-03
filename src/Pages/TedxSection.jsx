@@ -1,28 +1,27 @@
-import React from 'react'
+import React from 'react';
 
 const TedxSection = () => {
     return (
-        <div>
-            <div>
+        <div className='w-full'>
+            {/* Desktop Image */}
+            <div className='hidden sm:block w-full'>
+                <img
+                    src='/Blogs/founder-2.png'
+                    alt='Founder'
+                    className='w-full h-auto object-contain'
+                />
+            </div>
 
-                <div className='sm:block hidden'>
-                    <img
-                        src='/Blogs/founder-2.png'
-                        className='sm:w-full w-[375px] h-[399px] sm:h-[700px] '
-                    />
-
-                </div>
-                <div className='sm:hidden'>
-                    <img
-                        src='/Blogs/founder-3.png'
-                        className='sm:w-full w-full h-[399px] sm:h-[700px] '
-                    />
-
-                </div>
-
+            {/* Mobile Image */}
+            <div className='block sm:hidden w-full'>
+                <img
+                    src='/Blogs/founder-3.png'
+                    alt='Founder Mobile'
+                    className='w-full h-auto object-contain'
+                />
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default TedxSection
+export default TedxSection;

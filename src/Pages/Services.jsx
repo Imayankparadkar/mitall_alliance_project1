@@ -175,18 +175,24 @@ const Services = () => {
                     </div>
 
 
-                    <div className="flex justify-center mb-16">
+                    <div className="mt-10 flex justify-center mb-10">
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                             {additionalServices.map((service) => (
                                 <div
                                     key={service.id}
-                                    className="border w-[320px] h-[200px] border-white text-white uppercase p-5 flex flex-col justify-between rounded-lg"
+                                    className="border w-[320px] h-[260px] border-white text-white uppercase p-5 flex flex-col justify-between"
                                 >
                                     <div className="font-semibold text-sm mb-3">
                                         {service.title}
                                     </div>
-                                    <div className="text-justify text-[12px]">
+                                    <div className="text-justify text-[12px] mb-4">
                                         {service.description}
+                                    </div>
+
+                                    <div className="w-full flex justify-center">
+                                        <button className="border  w-[230px] py-2 text-sm transition  cursor-pointer">
+                                            KNOW MORE
+                                        </button>
                                     </div>
                                 </div>
                             ))}

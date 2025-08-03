@@ -50,3 +50,16 @@ body {
   width: max-content;
   animation: marquee-right 25s linear infinite;
 }
+
+/* In your global CSS file (e.g., index.css) */
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); } /* The key change is here */
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content; /* This is crucial for the single track */
+  animation: marquee 40s linear infinite;
+}

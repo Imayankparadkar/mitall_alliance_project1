@@ -66,7 +66,7 @@ const About = () => {
                         </div>
                     </div>
 
-                    <div className='absolute top-40 right-12'>
+                    <div className='absolute top-40 right-51.5'>
                         <img
                             src='/About/sarthak.png'
                             alt='Sarthak Mittal'
@@ -137,11 +137,11 @@ const About = () => {
                         <img
                             src='/About/mobile-sarthak.png'
                             alt='Sarthak Mittal'
-                            className='absolute top-65 right-[7px] w-[140px]'
+                            className='absolute top-65 right-[-17px] w-[140px]'
                         />
                     </div>
-                    <div className='absolute top-35 right-4 '>
-                        <div className="bg-black h-20 w-31 rounded-lg flex flex-col items-center justify-center p-3">
+                    <div className='absolute top-35 right-[2px]'>
+                        <div className="bg-black h-18 w-30 rounded-lg flex flex-col items-center justify-center p-3">
                             <span className="bg-gradient-to-r from-[#CC9A48] to-[#C99748] bg-clip-text text-transparent font-bold text-[10px] uppercase">
                                 Sarthak mittal
                             </span>
