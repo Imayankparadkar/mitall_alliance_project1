@@ -8,9 +8,9 @@ const SectionFour = () => {
 
                 <div className="flex justify-center">
                     <img
-                        src="/Core/Team2.jpg"
+                        src="/Core/Team2.png"
                         alt="Team2"
-                        className="h-[220px] sm:h-[280px] lg:h-[320px] rounded-md"
+                        className="h-[220px] sm:h-[280px] lg:h-[400px]"
                     />
                 </div>
 

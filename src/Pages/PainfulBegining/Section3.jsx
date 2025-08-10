@@ -11,7 +11,7 @@ const Section3 = () => {
                         The Rise of an Entrepreneur
                     </h1>
 
-                    <div className="text-white max-w-full sm:max-w-lg lg:w-xl space-y-4 sm:space-y-6 lg:space-y-10 text-sm sm:text-base leading-relaxed px-2 lg:px-0">
+                    <div className="text-white max-w-full sm:max-w-lg lg:w-6xl space-y-4 sm:space-y-6 lg:space-y-10 text-sm sm:text-base leading-relaxed px-2 lg:px-0">
                         <p>
                             In <strong>2022</strong>, I joined <strong>NMIMS Indore</strong> for a <strong>B.Tech + MBA.</strong>
                             But my soul belonged to <strong>entrepreneurship.</strong>
@@ -36,9 +36,9 @@ const Section3 = () => {
                 {/* ✅ Image Section */}
                 <div className="mt-6 lg:mt-0 flex justify-center">
                     <img
-                        src="/Core/Team.jpg"
+                        src="/Core/Team.png"
                         alt="Team"
-                        className="h-[250px] sm:h-[300px] lg:h-[400px] rounded-md"
+                        className="h-[250px] sm:h-[300px] lg:h-[400px]"
                     />
                 </div>
             </div>

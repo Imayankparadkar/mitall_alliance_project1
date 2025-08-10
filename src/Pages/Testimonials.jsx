@@ -31,8 +31,9 @@ const Testimonials = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     return (
+        
         <div className="flex px-5 sm:px-20 h-[700px] sm:h-screen w-full bg-cover bg-center relative">
-
+        
 
             <div className="relative z-10 w-full">
 
@@ -41,7 +42,7 @@ const Testimonials = () => {
                         className="text-black bg-clip-text bg-gradient-to-r
                         text-2xl sm:text-[50px] font-bold uppercase mt-10"
                     >
-                        <span>TESTIMONIALS</span>
+                        <span>Success Stories</span>
                     </h1>
                     <img
                         src="/ConsistentMatrix/border.png"
@@ -56,7 +57,7 @@ const Testimonials = () => {
 
                 <div className="relative flex justify-center top-20 h-full transition-all duration-500 ease-in-out">
 
-                    <div className="bg-[#D0A151] sm:right-80 w-[250px] sm:w-[280px] h-[200px] rounded-md shadow-md flex flex-col justify-center items-center relative">
+                    <div className="bg-[#D0A151] sm:right-80 w-[250px] sm:w-[280px] h-[200px]  shadow-md flex flex-col justify-center items-center relative">
                         <div className="absolute -top-15">
                             <img
                                 src={testimonialsData[currentIndex].avatar}
@@ -68,7 +69,7 @@ const Testimonials = () => {
                             <span className="text-black/60 font-bold block mt-20 mb-3">
                                 {testimonialsData[currentIndex].name}
                             </span>
-                            <span className="text-white text-[12px] block">
+                            <span className="text-white text-[12px] font-medium block">
                                 {testimonialsData[currentIndex].role}
                             </span>
                         </div>
@@ -79,14 +80,14 @@ const Testimonials = () => {
                         <div>
                             <img
                                 src="/Core/q1.png"
-                                className="h-8 absolute top-5 sm:h-15"
+                                className="h-8 absolute -top-50 sm:h-15"
                                 alt="Quote Start"
                             />
                         </div>
-                        <div className="sm:w-xl text-[12px] sm:text-sm mt-15 text-black font-medium">
+                        <div className="sm:w-xl text-[20px] sm:text-sm -mt-30 text-black font-large">
                             <span>{testimonialsData[currentIndex].quote}</span>
                         </div>
-                        <div className="absolute right-10 sm:right-0 top-25">
+                        <div className="absolute right-10 sm:right-0 -top-15">
                             <img
                                 src="/Core/q1.png"
                                 className="h-8 sm:h-15 rotate-180"

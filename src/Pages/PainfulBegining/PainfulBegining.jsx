@@ -42,16 +42,16 @@ const PainfulBegining = () => {
                     {/* Intro Section */}
                     <div className="flex flex-col justify-center lg:flex-row gap-8 lg:gap-30 items-center mt-8 lg:mt-10">
                         {/* Text */}
-                        <div className="max-w-full sm:max-w-[550px] space-y-4 px-2 sm:px-0">
+                        <div className="max-w-full sm:max-w-[550px] space-y-7 px-2 sm:px-0">
                             <div>
-                                <span className="text-white flex flex-col text-center sm:text-left text-base sm:text-lg md:text-[20px]">
-                                    <span>I didn't inherit an empire.</span>
-                                    <span>Inherited the ashes of one.</span>
+                                <span className="text-white flex flex-col text-center sm:text-left text-base sm:text-lg md:text-[17px]">
+                                    <span><strong>I didn't inherit an empire.</strong></span>
+                                    <span><strong>Inherited the ashes of one.</strong></span>
                                 </span>
                             </div>
 
                             <div className="text-justify">
-                                <span className="text-white text-sm sm:text-[15px] leading-relaxed">
+                                <span className="text-white text-sm sm:text-[17px] leading-relaxed">
                                     In <strong>1907</strong>, two brave visionaries –{" "}
                                     <strong>Ganga Ram Mohanlal Mittal</strong> and{" "}
                                     <strong>Shri Babulal Mittal</strong> – built{" "}
@@ -80,26 +80,26 @@ const PainfulBegining = () => {
 
                     {/* Long Text Section */}
                     <div className="flex w-full justify-center items-center">
-                        <div className="text-white mt-8 lg:mt-10 text-sm sm:text-[15px] flex flex-col space-y-3 sm:space-y-4 text-justify leading-relaxed w-full sm:w-[90%] lg:w-[1030px] px-4 sm:px-0">
-                            <span>But success doesn’t always last forever.</span>
+                        <div className="text-white mt-8 lg:mt-10 text-sm sm:text-[17px] flex flex-col space-y-3 sm:space-y-7 text-justify leading-relaxed w-full sm:w-[90%] lg:w-[1030px] px-4 sm:px-0">
+                            <span>But <strong>success doesn’t always last forever.</strong></span>
                             <span>
-                                By 2003, after decades of internal disputes and poor financial
-                                decisions, the empire collapsed. The ₹1,000 crore dream faded
-                                into bankruptcy – the same year I was born.
+                                By <strong>2003</strong>, after decades of <strong>internal disputes and poor financial</strong>
+                                decisions, the empire collapsed. The <strong>₹1,000 crore</strong> dream faded
+                                into <strong>bankruptcy</strong> – the same year <strong>I was born.</strong>
                             </span>
                             <span>
-                                My father, once a proud industrialist, sank into depression. But
-                                in that darkness, my mother became our light – a symbol of grace,
+                                My father, once a <strong>proud industrialist</strong>, sank into depression. But
+                                in that darkness, <strong>my mother became our light</strong> – a symbol of grace,
                                 strength, and unbreakable love.
                             </span>
-                            <span>I grew up with responsibilities, not toys.</span>
+                            <span>I grew up with <strong>responsibilities, not toys.</strong></span>
                             <span>
-                                In 2011, my grandmother passed away, and my mother made the bold
+                                In <strong>2011</strong>, <strong>my grandmother passed away</strong>, and my mother made the bold
                                 decision to leave our family home — starting over from scratch.
                             </span>
                             <span>
-                                I ran errands. I stood by her. I learned resilience, empathy, and
-                                the fire to build something of my own.
+                                I ran errands. I stood by her. I learned <strong>resilience, empathy</strong>, and
+                                the <strong>fire to build something of my own.</strong>
                             </span>
                         </div>
                     </div>

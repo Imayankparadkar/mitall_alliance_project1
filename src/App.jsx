@@ -1,39 +1,40 @@
 // src/App.jsx
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Import components
-import Footer from './Components/Core/Footer/Footer';
-import Home from './Pages/Home';
-import About from './Pages/About';
-import SuccessMatrix from './Pages/SuccessMatrix';
-import ResultConsistent from './Pages/ResultConsistent';
-import ConnectMe from './Pages/ConnectMe';
-import PainfulBegining from './Pages/PainfulBegining/PainfulBegining';
-import Rebellion from './Pages/PainfulBegining/Rebellion';
-import Leadership from './Pages/Leadership';
-import FrameworkBad from './Pages/FrameworkBad';
-import Services from './Pages/Services';
-import Testimonials from './Pages/Testimonials';
-import Podcast from './Pages/Podcast';
-import Book from './Pages/Book';
-import Blog from './Pages/Blog';
-import GreatTogether from './Pages/GreatTogether';
-import Awards from './Pages/Awards';
-import TedxSection from './Pages/TedxSection';
+import Footer from "./Components/Core/Footer/Footer";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import SuccessMatrix from "./Pages/SuccessMatrix";
+import ResultConsistent from "./Pages/ResultConsistent";
+import ConnectMe from "./Pages/ConnectMe";
+import PainfulBegining from "./Pages/PainfulBegining/PainfulBegining";
+import Rebellion from "./Pages/PainfulBegining/Rebellion";
+import Leadership from "./Pages/Leadership";
+import FrameworkBad from "./Pages/FrameworkBad";
+import Services from "./Pages/Services";
+import Testimonials from "./Pages/Testimonials";
+import Podcast from "./Pages/Podcast";
+import Book from "./Pages/Book";
+import Blog from "./Pages/Blog";
+import GreatTogether from "./Pages/GreatTogether";
+import Awards from "./Pages/Awards";
+import TedxSection from "./Pages/TedxSection";
 
 // Import REAL pages
-import BlogsPage from './Pages/Blogs';
-import BlogDetail from './Pages/BlogDetail';
-import PodcastsDetail from './Pages/PodcastsDetail';
-import EventsPage from './Pages/Events';
-import PodcastsPage from './Pages/Podcasts';
-import PricingPage from './Pages/Pricing';
-import BooksPage from './Pages/Books';
-import MentorsPage from './Pages/Mentors';
-import HistoryPage from './Pages/History';
-import CareersPage from './Pages/Careers';
-import FAQsPage from './Pages/FAQs';
+import BlogsPage from "./Pages/Blogs";
+import BlogDetail from "./Pages/BlogDetail";
+import PodcastsDetail from "./Pages/PodcastsDetail";
+import EventsPage from "./Pages/Events";
+import PodcastsPage from "./Pages/Podcasts";
+import PricingPage from "./Pages/Pricing";
+import BooksPage from "./Pages/Books";
+import MentorsPage from "./Pages/Mentors";
+import HistoryPage from "./Pages/History";
+import CareersPage from "./Pages/Careers";
+import FAQsPage from "./Pages/FAQs";
+import ServiceDetails from './Pages/ServiceDetails';
 
 // This component aggregates all sections for the single-page style homepage.
 const HomePage = () => (
@@ -66,11 +67,18 @@ const App = () => {
         <Routes>
           {/* Main landing page */}
           <Route path="/" element={<HomePage />} />
-          
+
+          {/* Route for the main services list */}
+          <Route path="/" element={<Services />} />
+          <Route path="/services" element={<Services />} />
+
+          {/* Dynamic route for individual service details */}
+          <Route path="/services/:id" element={<ServiceDetails />} />
+
           {/* Blog pages */}
           <Route path="/blogs" element={<BlogsPage />} />
           <Route path="/blog/:id" element={<BlogDetail />} />
-          
+
           {/* Podcast pages */}
           <Route path="/podcasts" element={<PodcastsPage />} />
           {/* THIS IS THE NEWLY ADDED ROUTE.
@@ -89,7 +97,7 @@ const App = () => {
           <Route path="/faqs" element={<FAQsPage />} />
           <Route path="/contact" element={<ConnectMe />} />
         </Routes>
-        
+
         {/* The Footer appears on every page */}
         <Footer />
       </div>

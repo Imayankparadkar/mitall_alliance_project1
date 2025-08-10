@@ -1,25 +1,26 @@
-import React from "react";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
 
     const primaryServices = [
         {
             id: 1,
-            title: "Executive Mentoring",
+            title: "MarTech (Marketing Technology) Strategy",
             description:
-                "Refine strategic thinking, executive presence, decision-making, and leadership communication. Designed for CEOs, founders, and emerging leaders looking to scale with clarity and confidence.",
+                "Bridge the gap between marketing and technology. We help you implement powerful MarTech stacks that enhance customer experience, streamline marketing operations, and drive data-backed decisions that fuel growth.",
         },
         {
             id: 2,
-            title: "Effective Communication",
+            title: "BrandTech Consulting",
             description:
-                "Develop clear, confident, and persuasive communication skills across platforms. From boardrooms to public stages, enhance your ability to influence and connect.",
+                "Reimagine your brand with the power of technology. Our BrandTech solutions combine creative branding with cutting-edge digital tools—ensuring your business stands out, stays relevant, and builds lasting emotional connections with your audience",
         },
         {
             id: 3,
-            title: "Business Expansion into Asia",
+            title: "Personal Brand Consulting",
             description:
-                "Advisory support for entering high-growth Asian markets. Includes strategic research, regional alignment, and on-ground execution planning to ensure a smooth and successful expansion.",
+                "Your personal brand is your legacy. We help entrepreneurs, coaches, and thought leaders create an authentic online presence—via LinkedIn, personal websites, and media positioning—that opens doors to new opportunities and influence.",
         },
     ];
 
@@ -27,88 +28,27 @@ const Services = () => {
     const additionalServices = [
         {
             id: 4,
-            title: "Sales Enablement",
+            title: "Sales Coaching & Consulting",
             description:
-                "Equip your sales team with effective messaging, engagement strategies, and closing techniques. Convert conversations into consistent conversions with a structured, proven framework.",
+                "Struggling to convert leads into loyal customers? Our sales consulting sharpens your sales processes, scripts, and team performance—using proven frameworks, automation tools, and AI-led insights to consistently close more deals.",
         },
         {
             id: 5,
-            title: "How to Own Any Stage Like a Pro",
+            title: "Business Expansion Strategy (USA, Europe & UK)",
             description:
-                "Build a commanding presence on any stage. Learn vocal mastery, body language, and energy control to leave a memorable impression every time you speak.",
+                "Go global with confidence. With in-depth market insights and local partner networks, we help Indian businesses expand into the USA, Europe, and the UK—minimizing risk, navigating regulations, and setting up the right entry strategy.",
         },
         {
             id: 6,
-            title: "Professional Development",
+            title: "Self-Analysis & Life Auditing",
             description:
-                "Accelerate your career with mindset mastery, leadership skills, and executive confidence. Stay future-ready with tools that position you ahead in competitive markets.",
+                "Business growth starts with personal clarity. Our life auditing framework helps you reflect, realign, and refocus on what truly matters—your purpose, vision, and habits—so you can grow both personally and professionally.",
         },
         {
             id: 7,
-            title: "The Ultimate Power Dressing Workshop",
+            title: "LinkedIn Consulting & Automation",
             description:
-                "Transform your appearance into a strategic asset. Discover the principles of dressing for  confidence, credibility, and lasting impressions.",
-        },
-        {
-            id: 8,
-            title: "Executive Presence for Advancing Career",
-            description:
-                "Elevate your leadership image. Learn the behaviors, body language, and mindset needed to  gain authority and accelerate career growth.",
-        },
-        {
-            id: 9,
-            title: "Mastering Powerful Presentations – Sci/Tech",
-            description:
-                "Translate complex scientific or technical concepts into impactful presentations. Learn to  simplify, visualize, and deliver data with clarity and persuasion.",
-        },
-
-        {
-            id: 10,
-            title: "Mastering Software Demos (2-Day Workshop)",
-            description:
-                "Move beyond technical walkthroughs to persuasive solution-selling. Learn how to present  software demos that engage, qualify, and convert decision-makers.",
-        },
-        {
-            id: 11,
-            title: "Acing a TEDx Presentation",
-            description:
-                "Design and deliver a TEDx-level talk that moves people. Learn how to simplify your  message, connect with the audience, and inspire ideas worth spreading.",
-        },
-        {
-            id: 12,
-            title: "Creating Your Unforgettable New Brand",
-            description:
-                "Build a personal brand that positions you as an expert. From narrative and positioning to  visuals and voice, craft a brand identity that gets noticed and rewarded.",
-        },
-        {
-            id: 13,
-            title: "Mastering Business Presentations",
-            description:
-                "Develop professional, compelling business presentations that deliver results. Structure your  message, engage your audience, and close your pitch effectively.",
-        },
-        {
-            id: 14,
-            title: "Storytelling Workshop",
-            description:
-                "Master the art of storytelling to influence, inspire, and connect. Learn frameworks that help  you drive emotion and action in any personal or professional setting.",
-        },
-        {
-            id: 15,
-            title: "Sales Enablement Workshop (3-Day Program)",
-            description:
-                "A deep-dive program to transform your software sales team. Focus on trust-building,  objection handling, and structured closing to scale results efficiently.",
-        },
-        {
-            id: 16,
-            title: "Becoming a Super Salesperson",
-            description:
-                "Take your sales skills to the next level. Master the psychology of selling,  relationship-building, and market positioning to collect revenue like a pro.",
-        },
-        {
-            id: 17,
-            title: "Business Consulting Services",
-            description:
-                "A tailored advisory program focused on market positioning, growth strategy, brand clarity,  and operational efficiency to unlock your next business milestone.",
+                "Turn LinkedIn into your lead generation engine. We help you optimize your profile, content, and networking strategy—and automate outreach systems that grow your visibility, engagement, and pipeline on autopilot.",
         },
     ];
 
@@ -165,9 +105,11 @@ const Services = () => {
                                         {service.description}
                                     </div>
                                     <div className="w-full flex justify-center">
-                                        <button className="border  w-[230px] py-2 text-sm transition  cursor-pointer">
-                                            KNOW MORE
-                                        </button>
+                                        <Link to={`/services/${service.id}`}>
+                                            <button className="border w-[230px] py-2 text-sm transition cursor-pointer">
+                                                KNOW MORE
+                                            </button>
+                                        </Link>
                                     </div>
                                 </div>
                             ))}
@@ -175,9 +117,37 @@ const Services = () => {
                     </div>
 
 
-                    <div className="mt-10 flex justify-center mb-10">
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                            {additionalServices.map((service) => (
+                    {/* --- MODIFIED SECTION --- */}
+                    <div className="mb-10">
+                        {/* Grid for the first 3 additional services */}
+                        <div className="flex justify-center">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                                {additionalServices.slice(0, 3).map((service) => (
+                                    <div
+                                        key={service.id}
+                                        className="border w-[320px] h-[260px] border-white text-white uppercase p-5 flex flex-col justify-between"
+                                    >
+                                        <div className="font-semibold text-sm mb-3">
+                                            {service.title}
+                                        </div>
+                                        <div className="text-justify text-[12px] mb-4">
+                                            {service.description}
+                                        </div>
+                                        <div className="w-full flex justify-center">
+                                            <Link to={`/services/${service.id}`}>
+                                                <button className="border w-[230px] py-2 text-sm transition cursor-pointer">
+                                                    KNOW MORE
+                                                </button>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Centered container for the last (7th) service */}
+                        <div className="mt-8 flex justify-center">
+                            {additionalServices.slice(3).map((service) => (
                                 <div
                                     key={service.id}
                                     className="border w-[320px] h-[260px] border-white text-white uppercase p-5 flex flex-col justify-between"
@@ -188,16 +158,19 @@ const Services = () => {
                                     <div className="text-justify text-[12px] mb-4">
                                         {service.description}
                                     </div>
-
                                     <div className="w-full flex justify-center">
-                                        <button className="border  w-[230px] py-2 text-sm transition  cursor-pointer">
-                                            KNOW MORE
-                                        </button>
+                                        <Link to={`/services/${service.id}`}>
+                                            <button className="border w-[230px] py-2 text-sm transition cursor-pointer">
+                                                KNOW MORE
+                                            </button>
+                                        </Link>
                                     </div>
                                 </div>
                             ))}
                         </div>
                     </div>
+                     {/* --- END OF MODIFIED SECTION --- */}
+
                 </div>
             </div>
         </div>

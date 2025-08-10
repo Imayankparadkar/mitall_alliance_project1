@@ -11,7 +11,7 @@ const Rebellion = () => {
                     <img
                         src="/Core/founder.png"
                         alt="Founder Image"
-                        className="w-[150px] sm:w-[200px] rounded-md mt-4 lg:mt-6"
+                        className="w-[200px] sm:w-[300px] mt-4 lg:mt-6"
                     />
                 </div>
 
@@ -27,7 +27,7 @@ const Rebellion = () => {
                         </h1>
                     </div>
 
-                    <div className="max-w-full sm:max-w-2xl lg:max-w-3xl space-y-4 text-justify text-sm sm:text-[15px] leading-relaxed px-4 lg:px-0">
+                    <div className="max-w-full sm:max-w-2xl lg:max-w-2xl space-y-10 text-justify text-sm sm:text-[17px] leading-relaxed px-4 lg:px-0">
                         <p>
                             Like many Indian kids, I was pushed into the IIT race. I enrolled in
                             a <strong>dummy school</strong> and <strong>FIITJEE coaching,</strong> but deep down, I knew I was meant

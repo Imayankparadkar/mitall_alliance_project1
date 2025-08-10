@@ -32,13 +32,13 @@ const Leadership = () => {
 
 
                 <div className="sm:mt-30 mt-10 sm:text-center  sm:w-[1200px]">
-                    <span className="text-white w-full sm:text-[20px]">
+                    <span className="text-white w-full sm:text-[23px]">
                         I was <strong>born in the ruins of a broken empire.</strong> But I chose to <strong>rebuild the Mittal name</strong> - not on <strong>inheritance</strong>, but <strong>insight</strong>. Not on privilege, but <strong>purpose.</strong>
                     </span>
                 </div>
 
                 <div className="mt-10 ">
-                    <span className="text-white sm:text-center w-full sm:text-[20px]">
+                    <span className="text-white sm:text-center w-full sm:text-[23px]">
                         This is <strong>just the beginning.</strong>  And I’m here to help <strong>others write their own story of reinvention - no matter where  they start.</strong>
                     </span>
                 </div>
