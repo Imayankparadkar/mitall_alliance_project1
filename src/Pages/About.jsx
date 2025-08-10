@@ -66,7 +66,7 @@ const About = () => {
                         </div>
                     </div>
 
-                    <div className='absolute top-40 right-51.5'>
+                    <div className='absolute top-40 right-10'>
                         <img
                             src='/About/sarthak.png'
                             alt='Sarthak Mittal'
