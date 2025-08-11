@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Testimonials = () => {
+    // ... (all other code remains the same)
     const testimonialsData = [
         {
             id: 1,
@@ -29,14 +31,16 @@ const Testimonials = () => {
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
+    const navigate = useNavigate();
+
+    const handleRedirect = () => {
+        // This path should match the route for your Testimonials_InnerPage component
+        navigate('/testimonials'); 
+    };
 
     return (
-        
         <div className="flex px-5 sm:px-20 h-[700px] sm:h-screen w-full bg-cover bg-center relative">
-        
-
             <div className="relative z-10 w-full">
-
                 <div className="text-center mb-10">
                     <h1
                         className="text-black bg-clip-text bg-gradient-to-r
@@ -54,9 +58,7 @@ const Testimonials = () => {
                     </span>
                 </div>
 
-
                 <div className="relative flex justify-center top-20 h-full transition-all duration-500 ease-in-out">
-
                     <div className="bg-[#D0A151] sm:right-80 w-[250px] sm:w-[280px] h-[200px]  shadow-md flex flex-col justify-center items-center relative">
                         <div className="absolute -top-15">
                             <img
@@ -74,7 +76,6 @@ const Testimonials = () => {
                             </span>
                         </div>
                     </div>
-
 
                     <div className="absolute top-50 sm:right-50  transition-all duration-500">
                         <div>
@@ -97,22 +98,24 @@ const Testimonials = () => {
                     </div>
                 </div>
 
-
                 <div className="flex justify-center absolute w-full top-170 sm:top-155 space-x-3">
                     {testimonialsData.map((_, index) => (
                         <button
                             key={index}
                             onClick={() => setCurrentIndex(index)}
                             className={`w-3 h-3 rounded-full transition-all duration-300 
-                                ${currentIndex === index
-                                    ? "bg-black scale-110"
-                                    : "border"
+                                ${
+                                    currentIndex === index
+                                        ? "bg-black scale-110"
+                                        : "border"
                                 }`}
                         ></button>
                     ))}
                     <div className="flex justify-center absolute w-full top-15 space-x-3">
-
-                        <button className="bg-black w-[250px] text-center text-white py-2">
+                        <button
+                            onClick={handleRedirect}
+                            className="bg-black w-[250px] text-center text-white py-2 rounded-md shadow-lg transform transition-all duration-300 ease-in-out hover:bg-gray-800 hover:scale-105"
+                        >
                             More Testimonials
                         </button>
                     </div>

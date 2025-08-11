@@ -35,6 +35,7 @@ import HistoryPage from "./Pages/History";
 import CareersPage from "./Pages/Careers";
 import FAQsPage from "./Pages/FAQs";
 import ServiceDetails from './Pages/ServiceDetails';
+import Testimonials_InnerPage from './Pages/Testimonials_InnerPage';
 
 // This component aggregates all sections for the single-page style homepage.
 const HomePage = () => (
@@ -71,6 +72,8 @@ const App = () => {
           {/* Route for the main services list */}
           <Route path="/" element={<Services />} />
           <Route path="/services" element={<Services />} />
+          {/* Route for the main Testimoials list */}
+          <Route path="/testimonials" element={<Testimonials_InnerPage />} /> 
 
           {/* Dynamic route for individual service details */}
           <Route path="/services/:id" element={<ServiceDetails />} />

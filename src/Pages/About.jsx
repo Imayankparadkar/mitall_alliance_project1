@@ -70,7 +70,7 @@ const About = () => {
                         <img
                             src='/About/sarthak.png'
                             alt='Sarthak Mittal'
-                            className='h-full w-[300px]'
+                            className='h-full w-[174px]'
                         />
                     </div>
                 </div>
