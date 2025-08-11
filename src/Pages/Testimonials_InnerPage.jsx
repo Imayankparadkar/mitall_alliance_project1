@@ -52,17 +52,17 @@ const TestimonialCard = ({ image, name, role, review, review1, isReversed }) => 
         </div>
 
         {/* Testimonial Content */}
-        <div className={`text-center ${isReversed ? 'md:text-right' : 'md:text-left'} relative`}>
+        <div className={`relative text-center ${isReversed ? 'md:text-right' : 'md:text-left'}`}>
             
             {/* Quote Start */}
             <img
                 src="/Core/q1.png"
-                className="h-8 sm:h-15 absolute -top-18 left-0"
+                className="w-6 sm:w-8 absolute -top-2.5 left-0 transform -translate-x-1/2 -translate-y-1/2"
                 alt="Quote Start"
             />
 
             <p className="text-base lg:text-lg italic mb-4 text-gray-700">"{review}"</p>
-            <p className="text-base lg:text-lg italic mb-4 text-gray-700">"{review1}"</p>
+            {review1 && <p className="text-base lg:text-lg italic mb-4 text-gray-700">"{review1}"</p>}
             
             <h4 className="font-bold text-xl text-gray-900">{name}</h4>
             <p className="font-medium text-sm text-gray-600">{role}</p>
@@ -70,12 +70,13 @@ const TestimonialCard = ({ image, name, role, review, review1, isReversed }) => 
             {/* Quote End */}
             <img
                 src="/Core/q1.png"
-                className="h-8 sm:h-15 absolute -bottom-18 right-0 scale-x-[-1]"
+                className="w-6 sm:w-8 absolute -bottom-3.5 right-0 transform translate-x-1/2 translate-y-1/2 scale-x-[-1]"
                 alt="Quote End"
             />
         </div>
     </div>
 );
+
 
 
 const Testimonials_InnerPage = () => {
