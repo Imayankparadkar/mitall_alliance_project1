@@ -77,7 +77,7 @@ const Testimonials = () => {
                         </div>
                     </div>
 
-                    <div className="absolute top-50 sm:right-70  transition-all duration-500">
+                    <div className="absolute top-50 sm:right-60  transition-all duration-500">
                         <div>
                             <img
                                 src="/Core/q1.png"
