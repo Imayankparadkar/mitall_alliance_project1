@@ -10,7 +10,7 @@ const Testimonials = () => {
             role: "Author | Thought Partner | Guide",
             avatar: "/Core/Avatar.png",
             quote:
-                "Lorem1 ipsum Lorem1 ipsum Lorem1 ipsum Lorem1 ipsum Lorem1 ipsum Lorem1 ipsum.",
+                "Lorem1 ipsum Lorem1 ipsum Lorem1 ipsum Lorem1 ipsum Lorem1 ipsum Lorem1 ipsum. Lorem1 ipsum Lorem1 ipsum Lorem1 ipsum Lorem1 ipsum Lorem1 ipsum Lorem1 ipsum. Lorem1 ipsum Lorem1 ipsum Lorem1 ipsum Lorem1 ipsum Lorem1 ipsum Lorem1 ipsum.",
         },
         {
             id: 2,
@@ -44,7 +44,7 @@ const Testimonials = () => {
                 <div className="text-center mb-10">
                     <h1
                         className="text-black bg-clip-text bg-gradient-to-r
-                        text-2xl sm:text-[50px] font-bold uppercase mt-10"
+                        text-2xl sm:text-[50px] font-bold uppercase mt-20"
                     >
                         <span>Success Stories</span>
                     </h1>
@@ -77,7 +77,7 @@ const Testimonials = () => {
                         </div>
                     </div>
 
-                    <div className="absolute top-50 sm:right-50  transition-all duration-500">
+                    <div className="absolute top-50 sm:right-70  transition-all duration-500">
                         <div>
                             <img
                                 src="/Core/q1.png"

@@ -52,7 +52,7 @@ const FrameworkBad = () => {
                         className="text-transparent bg-clip-text bg-gradient-to-r 
                     from-[#D0A151] via-[#DCB56C] via-[#E6C584] 
                     via-[#DDB56D] to-[#CE9D4B] 
-                    text-2xl sm:text-[50px] font-bold w-full mt-10 uppercase"
+                    text-2xl sm:text-[50px] font-bold w-full mt-35 uppercase"
                     >
                         I use “bad” framework to solve problems
                     </h1>
@@ -118,11 +118,11 @@ const FrameworkBad = () => {
                     </div>
 
                     {/* Bottom Text */}
-                    <div className=" mt-10 w-full flex justify-center ">
+                    {/* <div className=" mt-10 w-full flex justify-center ">
                         <button className="text-white bg-[#CE9D4B] px-4 py-3 cursor-pointer rounded-full ">
                             Learn More About Our Framework
                         </button>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </>

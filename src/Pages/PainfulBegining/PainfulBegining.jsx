@@ -26,7 +26,7 @@ const PainfulBegining = () => {
                             className="text-transparent bg-clip-text bg-gradient-to-r 
                                 from-[#D0A151] via-[#DCB56C] via-[#E6C584] 
                                 via-[#DDB56D] to-[#CE9D4B] 
-                                text-xl sm:text-2xl md:text-3xl lg:text-[50px] italic font-bold uppercase mt-8 sm:mt-15"
+                                text-xl sm:text-2xl md:text-3xl lg:text-[50px] italic font-bold uppercase mt-8 sm:mt-25"
                         >
                             <span className="text-white">A</span> Painful{" "}
                             <span className="text-white">Beginning</span>

@@ -107,6 +107,11 @@ const Landing = () => {
                                 className={`inline-block h-auto object-contain mx-4 ${index % 4 === 0 ? 'w-10 sm:w-24' : 'w-20'}`}
                             />
                         ))}
+                        {logos.slice(11).map((logo, index) => (
+                            <img key={`dup-2-${index}`} src={logo.img} alt=""
+                                className={`inline-block h-auto object-contain mx-4 ${index % 4 === 0 ? 'w-10 sm:w-24' : 'w-20'}`}
+                            />
+                        ))}
                     </div>
                 </div>
             </div>
@@ -116,48 +121,8 @@ const Landing = () => {
                 <div className='w-full flex justify-center uppercase'>
                     <span className='text-[#CE9D4B] text-lg sm:text-xl'>TRUSTED BY</span>
                 </div>
-                <div className="text-center text-xs sm:text-sm text-white px-4">
+                <div className="text-center text-lg sm:text-0.5xl text-white px-4">
                     <span>Industry Icons | Conscious Companies | Soulful Celebrities | Internet Influencers | Passionate Professionals | Solopreneurs | Industrialists | Legacy-Driven Leaders</span>
-                </div>
-                <div className="overflow-x-hidden">
-                    <div className="py-2 animate-marquee whitespace-nowrap">
-                         {/* Render logos twice for the loop */}
-                        {logotwo.map((logo, index) => (
-                            <div key={`orig-3-${index}`} className="inline-flex flex-shrink-0 items-center justify-center mx-3">
-                                <img src={logo.img} alt="" className={`object-contain ${getTrustedBySize(index)}`} />
-                            </div>
-                        ))}
-                        {logotwo.map((logo, index) => (
-                            <div key={`dup-3-${index}`} className="inline-flex flex-shrink-0 items-center justify-center mx-3">
-                                <img src={logo.img} alt="" className={`object-contain ${getTrustedBySize(index)}`} />
-                            </div>
-                        ))}
-                        {logotwo.map((logo, index) => (
-                            <div key={`dup-3-${index}`} className="inline-flex flex-shrink-0 items-center justify-center mx-3">
-                                <img src={logo.img} alt="" className={`object-contain ${getTrustedBySize(index)}`} />
-                            </div>
-                        ))}
-                        {logotwo.map((logo, index) => (
-                            <div key={`dup-3-${index}`} className="inline-flex flex-shrink-0 items-center justify-center mx-3">
-                                <img src={logo.img} alt="" className={`object-contain ${getTrustedBySize(index)}`} />
-                            </div>
-                        ))}
-                        {logotwo.map((logo, index) => (
-                            <div key={`dup-3-${index}`} className="inline-flex flex-shrink-0 items-center justify-center mx-3">
-                                <img src={logo.img} alt="" className={`object-contain ${getTrustedBySize(index)}`} />
-                            </div>
-                        ))}
-                        {logotwo.map((logo, index) => (
-                            <div key={`dup-3-${index}`} className="inline-flex flex-shrink-0 items-center justify-center mx-3">
-                                <img src={logo.img} alt="" className={`object-contain ${getTrustedBySize(index)}`} />
-                            </div>
-                        ))}
-                        {logotwo.map((logo, index) => (
-                            <div key={`dup-3-${index}`} className="inline-flex flex-shrink-0 items-center justify-center mx-3">
-                                <img src={logo.img} alt="" className={`object-contain ${getTrustedBySize(index)}`} />
-                            </div>
-                        ))}
-                    </div>
                 </div>
             </div>
         </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { useInView } from "react-intersection-observer";
 
 const Card = ({
     polygon,
@@ -7,24 +8,46 @@ const Card = ({
     description,
     topImage = "top-8",
     layoutType = "default",
+    animationDelay = 0,
 }) => {
-    return (
-        <div className="relative w-[300px] overflow-hidden">
-            <img src={polygon} alt="Success Story" className="w-[250px] relative" />
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
 
+    // We've updated the logic for applying animation and hover classes
+    const cardClasses = `
+        relative w-[300px] overflow-hidden
+        transform transition-all duration-500 ease-in-out
+        hover:scale-105 hover:-translate-y-2
+        ${
+            inView
+                ? "opacity-100 translate-y-0 scale-100"
+                : "opacity-0 translate-y-8 scale-95"
+        }
+    `;
+
+    return (
+        <div
+            ref={ref}
+            className={cardClasses.trim()} // .trim() cleans up any extra whitespace
+            style={{ transitionDelay: `${animationDelay}ms` }}
+        >
+            {/* The rest of your Card JSX remains the same */}
+            <img src={polygon} alt="Success Story" className="w-[250px] relative" />
+            
             {layoutType === "default" && (
                 <>
                     <div className="absolute w-[300px] h-15 top-2 z-10 bg-gradient-to-b from-black/90 to-transparent rounded-md hidden sm:block"></div>
-
                     <div className={`absolute w-[220px] ${topImage} h-[280px]`}>
                         <img
                             src={image}
                             alt="Success Matrix"
-                            className="object-left object-cover h-[180px]  ml-4 mt-2"
+                            className="object-left object-cover h-[180px] ml-4 mt-2"
                         />
                     </div>
                     <div className="absolute w-[250px] h-full items-center flex top-10 justify-center">
-                        <span className="text-[#D0A151] text-[12px] w-full flex justify-center items-center flex-col ">
+                        <span className="text-[#D0A151] text-[12px] w-full flex justify-center items-center flex-col">
                             <span>{title[0]}</span>
                             <span>{title[1]}</span>
                         </span>
@@ -51,7 +74,6 @@ const Card = ({
                         </span>
                     </div>
                     <div className="absolute w-[300px] h-15 top-105 z-10 bg-gradient-to-b from-black/90 hidden sm:block to-transparent rounded-md"></div>
-
                     <div className={`absolute top-43 w-[220px] ${topImage} h-[280px]`}>
                         <img
                             src={image}

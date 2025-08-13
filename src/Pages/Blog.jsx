@@ -5,7 +5,7 @@ const Blog = () => {
     return (
         <>
 
-            <div className="px-5 relative sm:px-20 w-full bg-cover bg-center py-16 mb-10">
+            <div className="relative sm:px-center w-full bg-cover bg-center py-16 mb-10">
                 <div>
                     <img src="/Core/Divider.png"
                         className="absolute top-0 w-full"

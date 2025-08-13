@@ -36,6 +36,7 @@ import CareersPage from "./Pages/Careers";
 import FAQsPage from "./Pages/FAQs";
 import ServiceDetails from './Pages/ServiceDetails';
 import Testimonials_InnerPage from './Pages/Testimonials_InnerPage';
+import Struggle from "./Pages/Struggle";
 
 // This component aggregates all sections for the single-page style homepage.
 const HomePage = () => (
@@ -52,6 +53,7 @@ const HomePage = () => (
     <Awards />
     <TedxSection />
     <Testimonials />
+    <Struggle/>
     <Podcast />
     <Book />
     <Blog />
