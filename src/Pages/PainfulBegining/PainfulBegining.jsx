@@ -67,12 +67,12 @@ const PainfulBegining = () => {
                         <div className="flex flex-row gap-4 sm:gap-6 lg:gap-10 mt-4 lg:mt-0">
                             <img
                                 src="/Member/m1.png"
-                                className="w-[110px] h-[110px] sm:w-[140px] sm:h-[140px] lg:w-[160px] lg:h-[160px] rounded-md"
+                                className="w-[110px] h-[110px] sm:w-[140px] sm:h-[140px] lg:w-[160px] lg:h-[160px]"
                                 alt="Member 1"
                             />
                             <img
                                 src="/Member/m2.png"
-                                className="w-[110px] h-[110px] sm:w-[140px] sm:h-[140px] lg:w-[160px] lg:h-[160px] rounded-md"
+                                className="w-[110px] h-[110px] sm:w-[140px] sm:h-[140px] lg:w-[160px] lg:h-[160px]"
                                 alt="Member 2"
                             />
                         </div>
