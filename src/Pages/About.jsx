@@ -66,11 +66,11 @@ const About = () => {
                         </div>
                     </div>
 
-                    <div className='absolute top-40 right-10'>
+                    <div className='absolute top-38 right-15'>
                         <img
                             src='/About/sarthak.png'
                             alt='Sarthak Mittal'
-                            className='h-full w-[174px]'
+                            className='h-full w-[320px]'
                         />
                     </div>
                 </div>
