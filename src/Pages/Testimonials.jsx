@@ -42,12 +42,12 @@ const Testimonials = () => {
             
             {/* ## Section Header */}
             <div className="text-center mb-25 md:mb-20">
-                <h1 className="text-black text-3xl sm:text-5xl font-bold uppercase">
+                <h1 className="text-black text-3xl sm:text-4xl font-bold uppercase">
                     Success Stories
                 </h1>
                 <img
                     src="/ConsistentMatrix/border.png"
-                    className="sm:w-[470px] w-[250px] h-2 sm:h-[8px] mx-auto mt-2 mb-4"
+                    className="sm:w-[450x] w-[250px] h-2 sm:h-[8px] mx-auto mt-2 mb-4"
                     alt="Border"
                 />
                 <p className="text-xl sm:text-2xl text-black/60">
