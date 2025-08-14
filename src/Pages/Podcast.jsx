@@ -4,16 +4,16 @@ const Podcast = () => {
   return (
     <div>
       <div>
-        <img src="/Core/Divider.png" className="w-full h-8" alt="Divider" />
+        <img src="/Core/Divider.png" alt="Divider" />
       </div>
-      <div className="px-5 mt-10 sm:px-20 w-full bg-cover min-h-screen bg-center py-10">
+      <div className="px-5 mt-1 sm:px-20 w-full bg-cover min-h-screen bg-center py-10">
         <div className="text-center mb-10">
-          <h1 className="text-[#D0A151] text-2xl sm:text-[45px] font-bold uppercase">
+          <h1 className="text-[#D0A151] text-4xl sm:text-[45px] font-bold uppercase">
             PODCASTS
           </h1>
           <img
             src="/ConsistentMatrix/border.png"
-            className="w-[150px] sm:w-[200px] h-[5px] sm:h-[6px] mx-auto mt-2"
+            className="w-[210px] sm:w-[200px] h-[7px] sm:h-[6px] mx-auto mt-2"
             alt="Border"
           />
         </div>
@@ -33,7 +33,7 @@ const Podcast = () => {
           </div>
 
           <div className="max-w-[500px] text-left mt-6 lg:mt-0 px-2">
-            <h2 className="text-[24px] sm:text-[30px] lg:text-[50px] font-bold text-black leading-snug lg:leading-tight">
+            <h2 className="text-[36px] sm:text-[30px] lg:text-[50px] font-bold text-black leading-snug lg:leading-tight">
               A podcast for <br className="hidden lg:block" /> makers and
               entrepreneurs
             </h2>

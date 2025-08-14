@@ -15,7 +15,7 @@ const About = () => {
             <div>
                 <img
                     src='/Core/Frame.png' alt='Image'
-                    className='scale-80 h-8 w-full -mt-[3px]'
+                    className=''
                 />
             </div>
 
@@ -95,18 +95,18 @@ const About = () => {
             {/* MOBILE DESIGN             */}
             {/* (Visible only on small screens)    */}
             {/* =================================== */}
-            <div className='relative h-screen overflow-hidden sm:hidden'>
+            <div className='relative h-173 overflow-hidden sm:hidden'>
                 <div className='flex flex-col justify-center text-center'>
                     <div className='z-10'>
                         <div>
-                            <div className='absolute px-4 text-[24.1px] justify-center w-full uppercase font-[700] mt-5 text-[#D0A151]'>
+                            <div className='absolute px-4 text-[26px] justify-center w-full uppercase font-[700] mt-10 text-[#D0A151]'>
                                 <h1>About Sarthak mittal</h1>
                             </div>
                             <div className='absolute top-13 bg-[#E6C58480]/50 h-[40px] rotate-90 -left-6 w-[120px]'>
                             </div>
                         </div>
                         <div className='px-2'>
-                            <div className='rounded-lg w-[260px] border-2 mt-22 text-[8px]'>
+                            <div className='rounded-lg w-[260px] border-2 mt-26 text-[8.5px]'>
                                 {/* FULL TEXT FOR MOBILE VIEW */}
                                 <ul className='list-disc p-4 uppercase text-justify leading-relaxed'>
                                     <li>
@@ -114,31 +114,37 @@ const About = () => {
                                             <strong>FOUNDER & CEO </strong> of <strong>Mittal Alliance Industries Private Limited (India) </strong> and <strong>Mittal Brandtech Inc. (Colorado, USA) </strong> — two successful enterprises partnering with leading brands and <strong>2000+ industrialists</strong> worldwide.
                                         </p>
                                     </li>
+                                    <br/>
                                     <li>
                                         <p>
                                             Recognized as one of the <strong>most trusted branding experts</strong> across APAC, USA, and Europe, with multiple associated ventures and high-impact client portfolios.
                                         </p>
                                     </li>
+                                    <br/>
                                     <li>
                                         <p>
                                             CREATOR of <strong>BADVERSE</strong>  (Breakdown, Analysis, and Decision), a thriving community of over <strong>10,000 members</strong> dedicated to strategic personal and business transformation.
                                         </p>
                                     </li>
+                                    <br/>
                                     <li>
                                         <p>
                                             Achieved a LinkedIn reach of over <strong>15 million+</strong>, earning the trust and admiration of top industrialists and business leaders.
                                         </p>
                                     </li>
+                                    <br/>
                                     <li>
                                         <p>
                                             AUTHOR of “Contact Centre Success”, a <strong>Kindle book</strong> focused on sales, communication, and customer engagement in call centers.
                                         </p>
                                     </li>
+                                    <br/>
                                     <li>
                                         <p>
                                             PODCASTER & CONTENT CREATOR, running a <strong>YouTube channel</strong> and LinkedIn Live series with <strong>3,500+ subscribers,</strong> offering powerful insights on branding, entrepreneurship, and leadership.
                                         </p>
                                     </li>
+                                    <br/>
                                     <li>
                                         <p>
                                             <strong>GLOBAL SPEAKER</strong>, delivering <strong>200+ webinars</strong>, featured on TEDx, and honored with <strong>12+ awards</strong> and <strong>70+ testimonials</strong> from clients and forums around the globe — including Mittal Business Exchange, MSFB, and AACST.
@@ -152,7 +158,7 @@ const About = () => {
 
                 {/* ANIMATED MOBILE IMAGE */}
                 <div className={`
-                    absolute top-65 right-[-17px]
+                    absolute top-65 right-[-22px]
                     transition-all ease-in-out duration-1000
                     ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-20'}
                 `}>
@@ -163,7 +169,7 @@ const About = () => {
                     />
                 </div>
                 
-                <div className='absolute top-35 right-[2px]'>
+                <div className='absolute top-35 right-[-3px]'>
                     <div className="bg-black h-18 w-30 rounded-lg flex flex-col items-center justify-center p-3">
                         <span className="bg-gradient-to-r from-[#CC9A48] to-[#C99748] bg-clip-text text-transparent font-bold text-[10px] uppercase">
                             Sarthak mittal

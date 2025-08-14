@@ -28,7 +28,7 @@ import BlogDetail from "./Pages/BlogDetail";
 import PodcastsDetail from "./Pages/PodcastsDetail";
 import EventsPage from "./Pages/Events";
 import PodcastsPage from "./Pages/Podcasts";
-import PricingPage from "./Pages/Pricing";
+// import PricingPage from "./Pages/Pricing";
 import BooksPage from "./Pages/Books";
 import MentorsPage from "./Pages/Mentors";
 import HistoryPage from "./Pages/History";
@@ -94,7 +94,7 @@ const App = () => {
 
           {/* Other application pages */}
           <Route path="/events" element={<EventsPage />} />
-          <Route path="/pricing" element={<PricingPage />} />
+          {/* <Route path="/pricing" element={<PricingPage />} /> */}
           <Route path="/books" element={<BooksPage />} />
           <Route path="/mentors" element={<MentorsPage />} />
           <Route path="/history" element={<HistoryPage />} />

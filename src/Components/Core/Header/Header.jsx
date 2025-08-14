@@ -27,7 +27,7 @@ const Header = () => {
                         <Link to="/blogs" style={{ textDecoration: 'none' }} className="text-white/80 hover:text-white">Blogs</Link>
                         <Link to="/events" style={{ textDecoration: 'none' }} className="text-white/80 hover:text-white">Events</Link>
                         <Link to="/podcasts" style={{ textDecoration: 'none' }} className="text-white/80 hover:text-white">Podcasts</Link>
-                        <Link to="/pricing" style={{ textDecoration: 'none' }} className="text-white/80 hover:text-white">Pricing</Link>
+                        {/* <Link to="/pricing" style={{ textDecoration: 'none' }} className="text-white/80 hover:text-white">Pricing</Link> */}
                         <Link to="/books" style={{ textDecoration: 'none' }} className="text-white/80 hover:text-white">Books</Link>
                         <Link to="/mentors" style={{ textDecoration: 'none' }} className="text-white/80 hover:text-white">Mentors</Link>
                         <Link to="/history" style={{ textDecoration: 'none' }} className="text-white/80 hover:text-white">History</Link>

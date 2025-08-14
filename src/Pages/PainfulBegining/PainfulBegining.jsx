@@ -7,10 +7,10 @@ const PainfulBegining = () => {
     return (
         <div className="bg-black relative">
             {/* Divider */}
-            <div className="absolute sm:-mt-[6px]">
+            <div className="">
                 <img
                     src="/Core/BDivider.png"
-                    className="scale-75"
+                    className=""
                     alt="Divider"
                 />
             </div>
@@ -26,7 +26,7 @@ const PainfulBegining = () => {
                             className="text-transparent bg-clip-text bg-gradient-to-r 
                                 from-[#D0A151] via-[#DCB56C] via-[#E6C584] 
                                 via-[#DDB56D] to-[#CE9D4B] 
-                                text-xl sm:text-2xl md:text-3xl lg:text-[50px] italic font-bold uppercase mt-8 sm:mt-25"
+                                text-xl sm:text-2xl md:text-3xl lg:text-[50px] italic font-bold uppercase mt-15 sm:mt-25"
                         >
                             <span className="text-white">A</span> Painful{" "}
                             <span className="text-white">Beginning</span>
@@ -44,9 +44,9 @@ const PainfulBegining = () => {
                         {/* Text */}
                         <div className="max-w-full sm:max-w-[550px] space-y-7 px-2 sm:px-0">
                             <div>
-                                <span className="text-white flex flex-col text-center sm:text-left text-base sm:text-lg md:text-[17px]">
-                                    <span><strong>I didn't inherit an empire.</strong></span>
-                                    <span><strong>Inherited the ashes of one.</strong></span>
+                                <span className="text-white flex flex-col text-left sm:text-left text-base sm:text-lg md:text-[17px]">
+                                    <span>I didn't inherit an empire.</span>
+                                    <span>Inherited the ashes of one.</span>
                                 </span>
                             </div>
 

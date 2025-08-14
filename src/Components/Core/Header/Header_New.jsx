@@ -11,7 +11,7 @@ const Header_New = () => {
         { href: "/blogs", label: "Blogs" },
         { href: "/events", label: "Events" },
         { href: "/podcasts", label: "Podcasts" },
-        { href: "/pricing", label: "Pricing" },
+        // { href: "/pricing", label: "Pricing" },
         { href: "/books", label: "Books" },
         { href: "/mentors", label: "Mentors" },
         { href: "/history", label: "History" },

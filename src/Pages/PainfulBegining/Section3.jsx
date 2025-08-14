@@ -6,12 +6,12 @@ const Section3 = () => {
             <div className="min-h-[600px] px-4 sm:px-10 mt-10 flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-10">
 
                 {/* ✅ Text Section */}
-                <div className="text-center lg:text-left">
-                    <h1 className="text-[#CE9D4B] uppercase font-bold text-xl sm:text-2xl lg:text-[40px] mb-4 lg:mb-5">
+                <div className="lg:text-left">
+                    <h1 className="text-center text-[#CE9D4B] uppercase font-bold text-2xl sm:text-2xl lg:text-[40px] mb-8 lg:mb-5">
                         The Rise of an Entrepreneur
                     </h1>
 
-                    <div className="text-white max-w-full sm:max-w-lg lg:w-6xl space-y-4 sm:space-y-6 lg:space-y-10 text-sm sm:text-base leading-relaxed px-2 lg:px-0">
+                    <div className="text-justify align-middle text-white max-w-full sm:max-w-lg lg:w-6xl space-y-5 sm:space-y-6 lg:space-y-10 text-sm sm:text-base leading-relaxed lg:px-0">
                         <p>
                             In <strong>2022</strong>, I joined <strong>NMIMS Indore</strong> for a <strong>B.Tech + MBA.</strong>
                             But my soul belonged to <strong>entrepreneurship.</strong>
@@ -34,7 +34,7 @@ const Section3 = () => {
                 </div>
 
                 {/* ✅ Image Section */}
-                <div className="mt-6 lg:mt-0 flex justify-center">
+                <div className="mt-4 lg:mt-0 flex justify-center">
                     <img
                         src="/Core/Team.png"
                         alt="Team"

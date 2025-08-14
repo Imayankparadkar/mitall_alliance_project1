@@ -3,14 +3,13 @@ import React from "react";
 const Book = () => {
   return (
     <div>
-      {" "}
       {/* Divider */}
-      <div className="absolute -mt-[6px]">
-        <img src="/Core/BDivider.png" className="scale-75" alt="Divider" />
+      <div className="">
+        <img src="/Core/BDivider.png" alt="Divider" />
       </div>
       <div className="bg-black py-16 px-5 sm:px-20">
         <div className="flex flex-col lg:flex-row h-auto lg:h-[650px] justify-center items-center gap-14 lg:gap-20">
-          <div className="shadow-lg border-4 mt-12 border-[#D0A151] rounded-md overflow-hidden hover:scale-105 transition-transform duration-300">
+          <div className="shadow-lg border-4 mt-5 border-[#D0A151] rounded-md overflow-hidden hover:scale-105 transition-transform duration-300">
             <img
               src="/Book/Book.png"
               alt="Book"
@@ -19,7 +18,7 @@ const Book = () => {
           </div>
 
           <div className="max-w-[520px] text-left">
-            <button className="text-[#D0A151] mt-12 bg-[#FDAA5633] font-semibold border border-[#D0A151] px-5 py-2 rounded-full text-xs tracking-wide mb-5">
+            <button className="text-[#D0A151] mt-2 bg-[#FDAA5633] font-semibold border border-[#D0A151] px-5 py-2 rounded-full text-xs tracking-wide mb-5">
               LATEST PUBLICATION
             </button>
 
@@ -32,14 +31,14 @@ const Book = () => {
               Contact Centres
             </h2>
 
-            <p className="text-white/70 text-[15px] leading-relaxed mb-6">
+            <p className="text-white/70 text-[13px] leading-relaxed mb-6">
               Unlock the secrets to exceptional customer service and
               professional excellence. This comprehensive guide provides proven
               strategies, real-world case studies, and actionable insights for
               contact center leaders and professionals.
             </p>
 
-            <ul className="list-disc list-inside text-white/80 text-[14px] mb-8 space-y-2">
+            <ul className="list-disc list-inside text-white/80 text-[12px] mb-8 space-y-2">
               <li>Strategic framework for contact center optimization</li>
               <li>Boost customer service success stories</li>
               <li>Leadership strategies for team motivation</li>
@@ -47,7 +46,7 @@ const Book = () => {
             </ul>
 
             <div className="flex sm:flex-row gap-4">
-              <button className="bg-[#D0A151] text-[8px] px-5 cursor-pointer sm:text-[12px] flex items-center gap-2 text-black font-semibold sm:px-5 py-2 rounded-full hover:opacity-90 transition">
+              <button className="bg-[#D0A151] text-[10px] px-5 cursor-pointer sm:text-[12px] flex items-center gap-2 text-black font-bold sm:px-5 py-2 rounded-full hover:opacity-90 transition">
                 <svg
                   width="21"
                   height="20"

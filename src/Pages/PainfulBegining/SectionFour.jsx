@@ -15,7 +15,7 @@ const SectionFour = () => {
                 </div>
 
                 <div className=" lg:text-left mt-6 lg:mt-0">
-                    <h1 className="text-[#CE9D4B] uppercase font-bold text-xl sm:text-2xl lg:text-[40px] mb-4 lg:mb-5">
+                    <h1 className="text-center text-[#CE9D4B] uppercase font-bold text-xl sm:text-2xl lg:text-[40px] mb-4 lg:mb-5">
                         From BadBusiness to BADVERSE
                     </h1>
 

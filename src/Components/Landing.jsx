@@ -30,9 +30,9 @@ const Landing = () => {
         <div className='w-full h-full space-y-10 py-10'>
             {/* --- HEADER AND TEXT SECTIONS (Unchanged) --- */}
             <div className='flex flex-col h-full w-full justify-center items-center'>
-                <h1 className='uppercase flex sm:flex-row flex-col sm:space-x-5 justify-center items-center text-center text-[40px] sm:text-[50px] text-[#CE9D4B]'>
+                <h1 className='uppercase flex sm:flex-row flex-col sm:space-x-5 justify-center items-center text-center text-[55px] sm:text-[50px] text-[#CE9D4B]'>
                     <span className='font-bold'>Mittal</span>
-                    <span className='text-white/70 sm:text-[50px] text-[20px] sm:text-start text-center '>CREATE</span>
+                    <span className='text-white sm:text-[50px] text-[30px] sm:text-start text-center '>CREATE</span>
                 </h1>
                 <span className="uppercase text-[20px] text-center sm:text-start sm:text-[40px] font-bold bg-gradient-to-r from-[#D0A151] via-[#E6C584] via-[#CE9D4B] to-[#E2BE7A] bg-clip-text text-transparent mt-5 sm:mt-0">
                     VISIONARY CEO's <span className='text-white'>&</span> INDUSTRY-LEADING ENTERPRISES
@@ -46,7 +46,7 @@ const Landing = () => {
             {/* --- "MY WORK" LOGO SECTION --- */}
             <div className='w-full space-y-4'>
                 <div className='w-full flex justify-center uppercase'>
-                    <span className='text-[#CE9D4B] text-lg sm:text-xl'>My Work has reached audiences at</span>
+                    <span className='text-[#CE9D4B] text-[16px] sm:text-xl'>My Work has reached audiences at</span>
                 </div>
                 {/* Row 1 - Continuous */}
                 <div className="overflow-x-hidden">
@@ -121,7 +121,7 @@ const Landing = () => {
                 <div className='w-full flex justify-center uppercase'>
                     <span className='text-[#CE9D4B] text-lg sm:text-xl'>TRUSTED BY</span>
                 </div>
-                <div className="text-center text-lg sm:text-0.5xl text-white px-4">
+                <div className="text-center text-sm sm:text-0.5xl text-white px-4">
                     <span>Industry Icons | Conscious Companies | Soulful Celebrities | Internet Influencers | Passionate Professionals | Solopreneurs | Industrialists | Legacy-Driven Leaders</span>
                 </div>
             </div>

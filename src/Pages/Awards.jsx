@@ -26,7 +26,7 @@ const Awards = () => {
             <div>
                 <img
                     src="/Core/Divider.png"
-                    className="w-full h-8"
+                    
                     alt="Divider"
                 />
             </div>
@@ -38,22 +38,12 @@ const Awards = () => {
                         className="text-transparent bg-clip-text bg-gradient-to-r 
                         from-[#D0A151] via-[#DCB56C] via-[#E6C584] 
                         via-[#DDB56D] to-[#CE9D4B] 
-                        text-xl sm:text-[50px] font-bold mt-10 uppercase"
+                        text-3xl sm:text-[50px] font-bold mt-10 uppercase mb-7"
                     >
                         Media Honors AND AWARDS
                     </h1>
 
-
-                    <div className="mt-2">
-                        <img
-                            src="/ConsistentMatrix/border.png"
-                            className="sm:w-[820px] w-full mx-auto"
-                            alt="Border"
-                        />
-                    </div>
-
-
-                    <div className="grid grid-cols-1 sm:grid-cols-4 gap-30 gap-x-35 mt-15 place-items-center">
+                    <div className="grid grid-cols-1 sm:grid-cols-4 gap-30 gap-x-35 mt-20 place-items-center">
                         {acquiredBusinesses.map((business) => (
                             <div
                                 key={business.id}

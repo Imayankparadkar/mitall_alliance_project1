@@ -11,7 +11,7 @@ const Leadership = () => {
 
     return (
         <div
-            className="flex px-4 sm:px-20 w-full justify-center h-[600px] sm:h-screen bg-cover bg-bottom relative"
+            className="flex px-3 sm:px-20 w-full justify-center h-[550px] sm:h-screen bg-cover bg-bottom relative"
             style={{
                 backgroundImage: "url('/Leadership/bg.png')",
             }}
@@ -25,7 +25,7 @@ const Leadership = () => {
                     className="text-transparent text-center bg-clip-text bg-gradient-to-r 
                      from-[#D0A151] via-[#DCB56C] via-[#E6C584] 
                      via-[#DDB56D] to-[#CE9D4B] 
-                     text-2xl sm:text-[50px] font-bold  sm:w-full uppercase mt-20"
+                     text-3xl sm:text-[50px] font-bold  sm:w-full uppercase mt-20"
                 >
                     From Legacy to Leadership
                 </h1>
@@ -44,7 +44,7 @@ const Leadership = () => {
                 </div>
 
                 <div className="w-full justify-center flex mt-10 sm:mt-20">
-                    <button className="border-[#CE9D4B] border px-4 py-3 text-[#CE9D4B] rounded-full font-semibold cursor-pointer">
+                    <button className="border-[#CE9D4B] border px-4 py-3  text-[#CE9D4B] rounded-full font-semibold cursor-pointer">
                         View Entire Journey
                     </button>
                 </div>

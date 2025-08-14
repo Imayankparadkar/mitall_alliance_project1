@@ -168,10 +168,15 @@ const SuccessMatrix = () => {
 
     return (
         <>
-            <div className="h-full bg-black sm:mt-[46px] hidden sm:block">
-                <div className="relative top-1 sm:-top-[10px]">
-                    <img src="/SuccessMatrix/page-divider.png" className="sm:scale-60" />
-                </div>
+            <div className="h-270 bg-black sm:mt-[46px] hidden sm:block">
+                 {/* Divider */}
+            <div className="">
+                <img
+                    src="/Core/BDivider.png"
+                    className=""
+                    alt="Divider"
+                />
+            </div>
 
                 <div className="w-full justify-center px-20 uppercase mt-5 font-bold">
                     <h1 className="text-[#D0A151] text-[50px]">Success Matrix</h1>
@@ -205,7 +210,7 @@ const SuccessMatrix = () => {
 
             <>
                 <div className="h-full w-full justify-center bg-black  sm:hidden">
-                    <div className="relative top-[0px] flex justify-center w-full ">
+                    <div className="">
                         <img src="/SuccessMatrix/page-divider.png" className="w-[500px] h-[15px] " />
                     </div>
 

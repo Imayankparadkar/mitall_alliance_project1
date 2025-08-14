@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Testimonials = () => {
-    // ... (all other code remains the same)
     const testimonialsData = [
         {
             id: 1,
@@ -10,7 +9,7 @@ const Testimonials = () => {
             role: "Author | Thought Partner | Guide",
             avatar: "/Core/Avatar.png",
             quote:
-                "Lorem1 ipsum Lorem1 ipsum Lorem1 ipsum Lorem1 ipsum Lorem1 ipsum Lorem1 ipsum. Lorem1 ipsum Lorem1 ipsum Lorem1 ipsum Lorem1 ipsum Lorem1 ipsum Lorem1 ipsum. Lorem1 ipsum Lorem1 ipsum Lorem1 ipsum Lorem1 ipsum Lorem1 ipsum Lorem1 ipsum.",
+                "Lorem1 ipsum Lorem1 ipsum Lorem1 ipsum Lorem1 ipsum Lorem1 ipsum.",
         },
         {
             id: 2,
@@ -35,91 +34,88 @@ const Testimonials = () => {
 
     const handleRedirect = () => {
         // This path should match the route for your Testimonials_InnerPage component
-        navigate('/testimonials'); 
+        navigate('/testimonials');
     };
 
     return (
-        <div className="flex px-5 sm:px-20 h-[700px] sm:h-screen w-full bg-cover bg-center relative">
-            <div className="relative z-10 w-full">
-                <div className="text-center mb-10">
-                    <h1
-                        className="text-black bg-clip-text bg-gradient-to-r
-                        text-2xl sm:text-[50px] font-bold uppercase mt-20"
-                    >
-                        <span>Success Stories</span>
-                    </h1>
+        <div className="flex flex-col items-center px-6 sm:px-12 lg:px-20 py-20 sm:py-24 min-h-screen w-full bg-cover bg-center">
+            
+            {/* ## Section Header */}
+            <div className="text-center mb-25 md:mb-20">
+                <h1 className="text-black text-3xl sm:text-5xl font-bold uppercase">
+                    Success Stories
+                </h1>
+                <img
+                    src="/ConsistentMatrix/border.png"
+                    className="sm:w-[470px] w-[250px] h-2 sm:h-[8px] mx-auto mt-2 mb-4"
+                    alt="Border"
+                />
+                <p className="text-xl sm:text-2xl text-black/60">
+                    Trusted by Leaders Across Industries
+                </p>
+            </div>
+
+            {/* ## Testimonial Content Wrapper */}
+            {/* This container uses Flexbox to switch from vertical (mobile) to horizontal (desktop) layout */}
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-y-24 gap-x-16 w-full max-w-6xl flex-grow">
+                
+                {/* Card with Avatar */}
+                <div className="relative flex-shrink-0 w-[280px] h-[200px]">
                     <img
-                        src="/ConsistentMatrix/border.png"
-                        className="sm:w-[470px] w-[200px] h-2 sm:h-[8px] mx-auto mb-4"
-                        alt="Border"
+                        src={testimonialsData[currentIndex].avatar}
+                        alt="Avatar"
+                        className="w-[150px] h-[150px] rounded-full shadow-md absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2"
                     />
-                    <span className="text-2xl text-black/60 flex flex-col w-full justify-center">
-                        <span>Trusted by Leaders Across</span>industries
-                    </span>
-                </div>
-
-                <div className="relative flex justify-center top-20 h-full transition-all duration-500 ease-in-out">
-                    <div className="bg-[#D0A151] sm:right-80 w-[250px] sm:w-[280px] h-[200px]  shadow-md flex flex-col justify-center items-center relative">
-                        <div className="absolute -top-15">
-                            <img
-                                src={testimonialsData[currentIndex].avatar}
-                                alt="Avatar"
-                                className="w-[150px] h-[150px] rounded-full shadow-md"
-                            />
-                        </div>
-                        <div className="text-center">
-                            <span className="text-black/60 font-bold block mt-20 mb-3">
-                                {testimonialsData[currentIndex].name}
-                            </span>
-                            <span className="text-white text-[12px] font-medium block">
-                                {testimonialsData[currentIndex].role}
-                            </span>
-                        </div>
-                    </div>
-
-                    <div className="absolute top-50 sm:right-60  transition-all duration-500">
-                        <div>
-                            <img
-                                src="/Core/q1.png"
-                                className="h-8 absolute -top-50 sm:h-15"
-                                alt="Quote Start"
-                            />
-                        </div>
-                        <div className="sm:w-xl text-[20px] sm:text-sm -mt-30 text-black font-large">
-                            <span>{testimonialsData[currentIndex].quote}</span>
-                        </div>
-                        <div className="absolute right-10 sm:right-0 -top-15">
-                            <img
-                                src="/Core/q1.png"
-                                className="h-8 sm:h-15 rotate-180"
-                                alt="Quote End"
-                            />
-                        </div>
+                    <div className="bg-[#D0A151] w-full h-full shadow-md flex flex-col justify-end items-center text-center pb-6">
+                        <span className="text-black/60 font-bold text-lg">
+                            {testimonialsData[currentIndex].name}
+                        </span>
+                        <span className="text-white text-xs font-medium px-2">
+                            {testimonialsData[currentIndex].role}
+                        </span>
                     </div>
                 </div>
 
-                <div className="flex justify-center absolute w-full top-170 sm:top-155 space-x-3">
+                {/* Quote Section */}
+                <div className="relative max-w-lg text-center lg:text-left">
+                    <img
+                        src="/Core/q1.png"
+                        className="h-8 sm:h-12 absolute -top-10 -left-4 lg:-left-8 opacity-50"
+                        alt="Quote Start"
+                    />
+                    <p className="text-lg sm:text-xl text-black/80 font-medium italic">
+                        {testimonialsData[currentIndex].quote}
+                    </p>
+                    <img
+                        src="/Core/q1.png"
+                        className="h-8 sm:h-12 absolute -bottom-10 -right-4 lg:-right-8 rotate-180 opacity-50"
+                        alt="Quote End"
+                    />
+                </div>
+            </div>
+
+            {/* ## Controls: Pagination Dots and Button */}
+            <div className="mt-20 md:mt-24 flex flex-col items-center gap-y-8">
+                {/* Pagination Dots */}
+                <div className="flex justify-center space-x-3">
                     {testimonialsData.map((_, index) => (
                         <button
                             key={index}
                             onClick={() => setCurrentIndex(index)}
                             className={`w-3 h-3 rounded-full transition-all duration-300 
-                                ${
-                                    currentIndex === index
-                                        ? "bg-black scale-110"
-                                        : "border"
-                                }`}
+                                ${currentIndex === index ? "bg-black scale-110" : "bg-gray-300 hover:bg-gray-400"}
+                            `}
                         ></button>
                     ))}
-                    <div className="flex justify-center absolute w-full top-15 space-x-3">
-                        <button
-                            onClick={handleRedirect}
-                            className="bg-black w-[250px] text-center text-white py-2 rounded-md shadow-lg transform transition-all duration-300 ease-in-out hover:bg-gray-800 hover:scale-105"
-                        >
-                            More Testimonials
-                        </button>
-                    </div>
                 </div>
+
+                {/* More Testimonials Button */}
+                <button
+                    onClick={handleRedirect}
+                    className="bg-black w-[250px] text-center text-white py-3 rounded-md shadow-lg transform transition-all duration-300 ease-in-out hover:bg-gray-800 hover:scale-105"
+                >
+                    More Testimonials
+                </button>
             </div>
         </div>
     );

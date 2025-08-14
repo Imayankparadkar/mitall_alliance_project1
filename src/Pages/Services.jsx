@@ -53,8 +53,8 @@ const Services = () => {
   return (
     <div className="bg-black relative">
       {/* Divider */}
-      <div className="absolute -mt-[6px]">
-        <img src="/Core/BDivider.png" className="scale-75" alt="Divider" />
+      <div className="">
+        <img src="/Core/BDivider.png" alt="Divider" />
       </div>
 
       {/* Main Section */}
@@ -67,14 +67,14 @@ const Services = () => {
               className="text-transparent bg-clip-text bg-gradient-to-r 
                             from-[#D0A151] via-[#DCB56C] via-[#E6C584] 
                             via-[#DDB56D] to-[#CE9D4B] 
-                            text-2xl sm:text-[50px] font-bold uppercase mt-15"
+                            text-4xl sm:text-[50px] font-bold uppercase mt-15 mb-3"
             >
               <span className="text-[#D0A151]">Services</span>
             </h1>
 
             <img
               src="/ConsistentMatrix/border.png"
-              className="w-[250px] h-[8px] mx-auto mb-4"
+              className="w-[180px] h-[8px] mx-auto mb-5"
               alt="Border"
             />
             <span className="text-[#E0E0E0]">
