@@ -33,7 +33,58 @@ const testimonialData = [
         role: "Author, Speaker & Management Consultant-Insurance",
         review: "What sets Sarthak apart is not just his fluency in AI, branding, and digital transformation, but his uncompromising belief in the power of youth. With a mission to turn students into CEOs and careers into legacies, he has mentored thousands, created tangible job opportunities, and built one of the most energetic and future-focused youth communities in India. Whether he's delivering a TEDx talk, conducting one of his 150+ workshops, or hosting his podcast, Sarthak brings clarity, credibility, and contagious energy to every interaction.",
         review1:"His personal brand is rooted in authenticity and bold ambition—qualities that reflect in his Mittal Millionaires community and his global leadership roadmap. From Fortune 500 consulting to grassroots mentorship, he operates at both altitude and depth. If you're looking to collaborate with someone who doesn't just dream big but executes bigger, Sarthak is the name to know. He isn’t just building companies—he’s building a legacy, and if you connect with him, he’ll challenge you to build yours too."
-    }
+    },
+    {
+        id: 5,
+        image: "/Testimonials/testimonial6.png",
+        name: "Andriana Nunez",
+        role: "Delivering Tangible Results",
+        review: "In just a brief interaction, Sarthak Mittal completely shifted how I view branding. He reminded me that a powerful brand and authentic voice start with purpose, not just a portfolio. Through real examples, he showed me what it truly means to showcase your essence — not just what you do, but who you are. The clarity he brought to this concept was incredible, and his approach made the idea feel both inspiring and attainable.",
+        review1:"Sarthak didn’t stop at theory — he gave me actionable, immediately applicable steps to elevate my online presence and align it with my deeper mission. His ability to distill complex branding ideas into clear, practical insights is rare, and his generosity in sharing his expertise is even rarer. If you’re looking for someone who can help you uncover and express your true brand essence, Sarthak is the person you want in your corner."
+    },
+    {
+        id: 6,
+        image: "/Testimonials/testimonial6.png",
+        name: "Divyansh Agarwal",
+        role: "Solution Principal @HighRadius | Student at Chandigarh University | Machine Learning & Python Enthusiast | Former Secretary @IEEE CUSB & Eloquence Consortium | Aspiring Soft Skills Coach",
+        review: "I had the absolute privilege of working under Mr. Sarthak Mittal during my internship at BADVERSE.IN, where he was not just a mentor but also a great friend and guide. Meeting him in person at BAD Talks: The CEO Summit 2025 was truly inspiring, as I witnessed firsthand his passion, dedication, and visionary leadership in action. Throughout my internship, he consistently provided guidance, support, and encouragement, helping me navigate challenges with confidence and turning even the toughest moments into valuable learning experiences.",
+        review1:"Sarthak sir is an exceptional leader, a true innovator, and someone who deeply believes in his initiatives. His mentorship played a crucial role in my personal and professional growth, and I truly appreciate his commitment to empowering others. Whether it was strategic decision-making or problem-solving during event execution, he was always there to help. I highly recommend him as a mentor to anyone looking to learn, grow, and excel in their journey, and I look forward to collaborating with him again in the future."
+    },
+    {
+        id: 7,
+        image: "/Testimonials/testimonial6.png",
+        name: "Bruno Salazar Molinero",
+        role: "Creator @Brunospeaks.com | Human-centered Native Spanish Coach | 5+ Years Experience",
+        review: "Sarthak and his team in Mittal are one of a kind. They came out of nowhere, and are helping me to get my business to the next level. Professional, trustworthy, and always helpful. I'm looking forward to see where our collaboration in the future will take us.",
+        // review1:"His personal brand is rooted in authenticity and bold ambition—qualities that reflect in his Mittal Millionaires community and his global leadership roadmap. From Fortune 500 consulting to grassroots mentorship, he operates at both altitude and depth. If you're looking to collaborate with someone who doesn't just dream big but executes bigger, Sarthak is the name to know. He isn’t just building companies—he’s building a legacy, and if you connect with him, he’ll challenge you to build yours too."
+    },
+    {
+        id: 8,
+        image: "/Testimonials/testimonial6.png",
+        name: "Kartik Sharma",
+        role: "Simplifying Artificial Intelligence for everyone!",
+        review: "I had the privilege of being featured on a podcast hosted by Sarthak, and it was an inspiring experience to witness his passion for making a difference in the lives of young people. Sarthak is a remarkable young entrepreneur who is not just focused on his own growth but is deeply committed to uplifting the youth community by bridging the gap between academia and industry. His ability to create opportunities, foster meaningful connections, and share knowledge through his platforms is truly commendable, and during our podcast discussion on AI, his knack for engaging conversations and drawing out valuable insights was evident.",
+        review1:"His dedication to empowering young minds, coupled with his entrepreneurial spirit, positions him as a true leader and changemaker. I’m excited to see how his initiatives will continue to inspire and positively impact the next generation. I highly recommend Sarthak to anyone seeking to collaborate with someone who is driven, innovative, and genuinely invested in creating value for the community. Keep up the great work, Sarthak — the future is bright with leaders like you paving the way."
+    },
+    {
+        id: 9,
+        image: "/Testimonials/testimonial6.png",
+        name: "Sahil Kumar Nagpal",
+        role: "International Life Coach | Best Selling Author | Keynote Speaker | Executive Coach To Leaders | Unconventional Leadership Trainer | Founder @ Optimum Living Media",
+        review: "Sarthak is a very dynamic, down to earth yet proactive individual. His sincerity and resilience outshines his experience. I did a podcast with him and his questions were very good. Good questions lead to a good show. He is a visionary with a doubt. I appreciate him for his work and wish him great luck for the future.",
+        // review1:"His personal brand is rooted in authenticity and bold ambition—qualities that reflect in his Mittal Millionaires community and his global leadership roadmap. From Fortune 500 consulting to grassroots mentorship, he operates at both altitude and depth. If you're looking to collaborate with someone who doesn't just dream big but executes bigger, Sarthak is the name to know. He isn’t just building companies—he’s building a legacy, and if you connect with him, he’ll challenge you to build yours too."
+    },
+    {
+        id: 10,
+        image: "/Testimonials/testimonial6.png",
+        name: "Saurab Gupta",
+        role: "Democratising Coaching with AI-Native Enterprise Platfrom ⚡ Founder at Enablerz || Making Coaching Accessible to Every Employee with Impact at Scale || Ex-Tata Motors, BNP, Ghari || Learner || Explorer || Poet",
+        review: "I had the pleasure of being featured on Sarthak's podcast as the Founder of Enablerz, where we discussed my journey in building a B2B SaaS product for the global market. Sarthak is an incredibly talented and energetic podcaster, blogger, and speaker who brings a unique blend of enthusiasm, insight, and professionalism to his work. From the very beginning, his ability to ask thoughtful, engaging questions was evident, creating an environment that felt both comfortable and stimulating, allowing for an authentic exchange of ideas. His deep understanding of the tech and startup ecosystem added tremendous value to our conversation, making it not only informative but also inspiring for listeners.",
+        review1:"Sarthak’s passion for storytelling, paired with his expertise in the digital space, truly sets him apart. He has a rare gift for blending knowledge with charisma, ensuring every interaction leaves a lasting impact. He is undoubtedly a rising star in the world of podcasting and blogging, and I have no doubt his influence will only continue to grow. I highly recommend Sarthak to anyone looking to collaborate with a dynamic, insightful, and purpose-driven content creator."
+    },
+
+    
+
 ];
 
 // Reusable component for each testimonial card, now with alternating layout

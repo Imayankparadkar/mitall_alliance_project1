@@ -78,7 +78,7 @@ const About = () => {
 
                     {/* ANIMATED DESKTOP IMAGE */}
                     <div className={`
-                        absolute top-38 right-30
+                        absolute top-38 right-15
                         transition-all ease-in-out duration-2000
                         ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-50'}
                     `}>
