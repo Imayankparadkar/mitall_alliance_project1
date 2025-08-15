@@ -9,7 +9,7 @@ const Testimonials = () => {
             role: "Author | Thought Partner | Guide",
             avatar: "/Core/Avatar.png",
             quote:
-                "Lorem1 ipsum Lorem1 ipsum Lorem1 ipsum Lorem1 ipsum Lorem1 ipsum.",
+                "Sarthak is a dynamic, down-to-earth, and proactive visionary whose sincerity and resilience shine through. I truly appreciated his insightful podcast questions and wish him great success ahead.",
         },
         {
             id: 2,
