@@ -31,7 +31,7 @@ const Books = () => {
       />
 
       <div className="bg-white font-sans">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 ">
 
           {/* 3. "Discover My Books" Heading */}
           <div className="text-center mb-12">

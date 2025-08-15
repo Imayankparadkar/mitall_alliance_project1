@@ -52,14 +52,14 @@ const Mentors = () => {
         {/* Main container */}
         <div>
           {/* Top Image Banner */}
-          <div className="flex flex-wrap justify-center items-center mb-16">
+          <div className="flex flex-wrap justify-center items-center mb-14">
             <img src="/Mentor/line.png" />
             <img src="/Mentor/mentor1.png" />
             <img src="/Mentor/mentor2.png" />
           </div>
 
           {/* Main Heading */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-14 mt-14">
             <h1
               className="inline-block text-4xl font-bold pb-2"
               style={{
@@ -76,9 +76,9 @@ const Mentors = () => {
             {mentorProfiles.map((mentor, index) => (
               // Using React.Fragment to handle keys and conditional rendering of the separator
               <React.Fragment key={mentor.id}>
-                <div className="py-10">
+                <div className="py-1">
                   {/* Mentor Image (Centered) */}
-                  <div className="flex justify-center mb-6">
+                  <div className="flex justify-center mb-4">
                     <img
                       src={mentor.image}
                       alt={`Mentor profile ${index + 1}`}

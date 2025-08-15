@@ -49,8 +49,7 @@ const PodcastCard = ({ id, imgSrc, title, description, host, date }) => (
         </p>
       </div>
 
-      {/* The "Browse Podcast" button is removed as the whole card is now a link. */}
-      {/* A subtle indicator can be added for better UX */}
+      {/* A subtle indicator for better UX */}
       <div className="mt-auto text-right">
         <span className="text-sm font-semibold text-[rgba(208,161,81,1)]">
           Read More →
@@ -62,7 +61,6 @@ const PodcastCard = ({ id, imgSrc, title, description, host, date }) => (
 
 
 const Podcasts = () => {
-  // The 'episodes' array is removed from here and is now imported as 'blogPosts'.
   const stats = [
     { value: "1.3M+", label: "ACROSS SOCIAL" },
     { value: "5M+", label: "MONTHLY REACH" },
@@ -74,18 +72,18 @@ const Podcasts = () => {
     <div className="bg-white min-h-screen font-sans">
       <Header />
       {/* Hero Section */}
-      <section className="flex flex-wrap justify-center items-center mb-16">
+      <section className="flex flex-wrap justify-center items-center mb-10">
         <img src="/Podcasts/line.png" alt="Decorative line" className="w-full" />
         <img src="/Podcasts/podcast1.png" alt="Podcast hero image 1" className="w-full" />
         <img src="/Podcasts/podcast2.png" alt="Podcast hero image 2" className="w-full" />
       </section>
 
       {/* Main content area */}
-      <main className="container mx-auto px-4 py-12">
-        {/* --- Updated First Design Section (Mobile Mockup & Text) --- */}
-        <section className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-16 mb-20 md:mb-24">
+      <main className="container mx-auto px-4 ">
+        {/* --- FIX: Updated this section for mobile side-by-side layout --- */}
+        <section className="flex flex-row items-center justify-center gap-4 md:gap-16 mb-5 md:mb-5">
           {/* Left Side: Mobile Mockup */}
-          <div className="flex-shrink-0 w-full max-w-xs md:w-1/3">
+          <div className="w-1/2 md:w-1/3 flex-shrink-0">
             <img
               src="/Podcasts/podcast3.png"
               alt="Podcast on mobile"
@@ -98,9 +96,9 @@ const Podcasts = () => {
           </div>
 
           {/* Right Side: Text, Links, and Buttons */}
-          <div className="text-center md:text-left">
-            <h2 className="text-4xl md:text-5xl leading-snug text-[rgba(208,161,81,1)] font-bold ">
-              <span className="md:text-2xl text-[rgba(208,161,81,1)] font-medium">
+          <div className="w-1/2 text-left">
+            <h2 className="text-2xl md:text-5xl leading-snug text-[rgba(208,161,81,1)] font-bold ">
+              <span className="text-base md:text-2xl text-[rgba(208,161,81,1)] font-medium">
                 EMPOWERING,{" "}
               </span>
               <br />
@@ -112,14 +110,14 @@ const Podcasts = () => {
                 INNOVATION
               </span>
             </h2>
-            <p className="mt-4 text-lg font-semibold bg-[rgba(208,161,81,1)] text-white inline-block px-6 py-2 rounded-lg">
+            <p className="mt-4 text-base md:text-lg font-semibold bg-[rgba(208,161,81,1)] text-white inline-block px-4 py-2 rounded-lg">
               PODCAST
             </p>
-            <p className="mt-8 text-base font-medium text-gray-600 tracking-wider">
+            <p className="mt-4 md:mt-8 text-xs md:text-base font-medium text-gray-600 tracking-wider">
               LISTEN ON YOUR FAVORITE PLATFORM
             </p>
 
-            <div className="mt-6 flex flex-col items-center md:items-start gap-6">
+            <div className="mt-4 md:mt-6 flex flex-col items-start gap-4 md:gap-6">
               <a
                 href="#"
                 className="flex items-center gap-2 text-gray-700 hover:opacity-80 transition-opacity"
@@ -127,11 +125,11 @@ const Podcasts = () => {
                 <img
                   src="https://www.youtube.com/s/desktop/014dbbed/img/favicon_144x144.png"
                   alt="YouTube icon"
-                  className="w-8 h-8"
+                  className="w-6 h-6 md:w-8 md:h-8"
                 />
-                <span className="text-3xl font-bold">YouTube</span>
+                <span className="text-xl md:text-3xl font-bold">YouTube</span>
               </a>
-              <button className="border-2 border-[rgba(208,161,81,1)] text-[rgba(208,161,81,1)] font-bold py-3 px-8 rounded-full hover:bg-[rgba(208,161,81,1)] hover:text-white transition-colors duration-300">
+              <button className="border-2 border-[rgba(208,161,81,1)] text-[rgba(208,161,81,1)] font-bold py-2 px-4 md:py-3 md:px-8 text-sm md:text-base rounded-full hover:bg-[rgba(208,161,81,1)] hover:text-white transition-colors duration-300">
                 JOIN FOR A PODCAST
               </button>
             </div>
@@ -139,7 +137,7 @@ const Podcasts = () => {
         </section>
 
         {/* --- Stats Section --- */}
-        <section className="py-10 mb-20 md:mb-32">
+        <section className="py-10 mb-5 md:mb-11">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center max-w-4xl mx-auto">
             {stats.map((stat, index) => (
               <div key={index}>
@@ -156,14 +154,14 @@ const Podcasts = () => {
 
         {/* --- Second Design Section (Episode Grid) --- */}
         <section>
-          <div className="text-center mb-12">
+          <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-bold text-[rgba(208,161,81,1)] border-b-4 border-[rgba(208,161,81,1)] inline-block pb-2">
               Checkout Our Regular Episodes
             </h2>
           </div>
           <br />
           {/* The grid now maps over the imported 'blogPosts' data */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
             {blogPosts.map((episode) => (
               <PodcastCard
                 key={episode.id}

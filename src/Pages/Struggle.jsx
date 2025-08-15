@@ -24,32 +24,29 @@ const Struggle = () => {
           <img src="/Core/BDivider.png"  alt="Divider" />
         </div>
 
-        {/* --- FIX: Added very large padding-bottom (pb-96) to extend the background --- */}
-        <div className="flex flex-col items-center px-6 sm:px-20 w-full justify-center bg-cover bg-center relative pb-40">
+        <div className="flex flex-col items-center px-6 sm:px-20 w-full justify-center bg-cover bg-center relative pb-13">
           <div className="relative z-10 text-center">
             <h1
               className="text-transparent bg-clip-text bg-gradient-to-r 
                          from-[#D0A151] via-[#DCB56C] via-[#E6C584] 
                          via-[#DDB56D] to-[#CE9D4B] 
-                         text-2xl sm:text-[50px] font-bold mt-15 uppercase" // Changed mt-30 to standard mt-20
+                         text-2xl sm:text-[50px] font-bold mt-15 uppercase"
             >
               My Struggles Made me Humble & grounded
             </h1>
 
-            {/* --- ADDED SUBHEADING --- */}
             <p className="text-white text-sm sm:text-xl mt-5">
               Some moments which made my life memorable
             </p>
-            {/* --- END SUBHEADING --- */}
 
 
-            {/* Changed mt-40 to mt-20 and gap-35 to gap-y-28 for vertical space */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-y-28 gap-x-0 mt-24 place-items-center">
+            {/* --- FIX: Removed gap from grid container --- */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 mt-10 place-items-center">
               {acquiredBusinesses.map((business) => (
                 <div
                   key={business.id}
-                  // --- KEPT the scale-220 class as requested ---
-                  className="flex items-center justify-center rounded-xl p-4 scale-220 transition-transform duration-300"
+                  // --- FIX: Added vertical margin (my-16) to create space for the scaled item ---
+                  className="flex items-center justify-center rounded-xl p-5 scale-220 transition-transform duration-300 my-16"
                 >
                   <img
                     src={business.image}

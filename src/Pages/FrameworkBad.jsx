@@ -66,7 +66,7 @@ const FrameworkBad = () => {
 
                     {/* Polygon Images */}
                     <div className="relative w-full border border-[#C0944B] p-4 flex flex-col justify-center items-center mt-10 sm:mt-10">
-                        <div className="flex flex-wrap justify-center gap-30">
+                        <div className="flex flex-wrap justify-center gap-8">
                             {acquiredBusinesses.map((business) => (
                                 <div
                                     key={business.id}

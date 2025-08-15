@@ -87,7 +87,7 @@ const History = () => {
                 
                 {/* --- Empowering Generations Section --- */}
                 <div className="text-center">
-                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold underline underline-offset-4 text-[rgba(208,161,81,1)]">EMPOWERING GENERATIONS, INSPIRING ENTREPRENEURIAL JOURNEYS</h2>
+                    <h2 className="text-3xl sm:text-4xl lg:text-4xl font-bold underline underline-offset-4 text-[rgba(208,161,81,1)]">EMPOWERING GENERATIONS, INSPIRING ENTREPRENEURIAL JOURNEYS</h2>
                     
                     <img src="/History/history3.png" alt="Lacs CEO's Creation Initiative" className="w-full max-w-4xl mx-auto mt-12 md:mt-20"/>
 

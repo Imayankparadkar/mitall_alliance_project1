@@ -30,7 +30,7 @@ const Events = () => {
 
 
       {/* Main Content */}
-      <main className="max-w-[1600px] mx-auto bg-transparent pt-24 px-4 pb-8 md:pt-32 md:px-8 md:pb-16">
+      <main className="max-w-[1600px] mx-auto bg-transparent pt-24 px-4 pb-8 md:pt-12 md:px-8 md:pb-16">
         {/* Section Title */}
         <div className="text-center mb-12">
           <h2 

@@ -62,7 +62,7 @@ const Careers = () => {
                 </div>
 
                 {/* --- Separator Line --- */}
-                <div className="my-16 border-t border-[#C27C06]"></div>
+                <div className="my-8 border-t border-[#C27C06]"></div>
 
                 {/* --- Connect With Me Section --- */}
                 <div>

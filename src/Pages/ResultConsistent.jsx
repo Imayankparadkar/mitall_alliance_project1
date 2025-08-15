@@ -71,7 +71,7 @@ const ResultConsistent = () => {
                     ))}
                 </div>
 
-                <div className="sm:mt-20 mt-5 mb-10">
+                <div className="sm:mt-20 mt-5 mb-12">
                     <span className="text-white font-semibold sm:text-center w-full flex justify-center text-[12px] sm:text-[25px]">
                         A Multinational “MITTAL” Brand Expanding by 2030
                     </span>

@@ -77,13 +77,13 @@ const Testimonials = () => {
                 </div>
 
                 {/* Quote Section */}
-                <div className="relative max-w-lg text-center lg:text-left">
+                <div className="relative max-w-lg text-center lg:text-left-10">
                     <img
                         src="/Core/q1.png"
-                        className="h-8 sm:h-12 absolute -top-10 -left-4 lg:-left-8 opacity-50"
+                        className="h-8 sm:h-12 absolute -top-13 -left-4 lg:-left-8 opacity-50"
                         alt="Quote Start"
                     />
-                    <p className="text-lg sm:text-xl text-black/80 font-medium italic">
+                    <p className="text-lg sm:text-xl text-black/80 font-sm">
                         {testimonialsData[currentIndex].quote}
                     </p>
                     <img
