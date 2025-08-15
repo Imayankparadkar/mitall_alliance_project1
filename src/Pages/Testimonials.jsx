@@ -17,7 +17,7 @@ const Testimonials = () => {
             role: "Leadership Coach",
             avatar: "/Core/Avatar.png",
             quote:
-                "Her guidance completely transformed my communication style. Truly life-changing experience.",
+                "During my internship at Mittal Alliance, working with Mr. Sarthak Mittal was truly inspiring. His dedication, work ethic, and genuine interest in learning and guiding others make him not just a capable professional, but also a thoughtful leader and inspiring mentor.",
         },
         {
             id: 3,
@@ -25,7 +25,7 @@ const Testimonials = () => {
             role: "CEO | Visionary Leader",
             avatar: "/Core/Avatar.png",
             quote:
-                "Working with this framework gave me clarity and the courage to expand my business in Asia.",
+                "Sarthak and his team at Mittal are exceptional—professional, trustworthy, and always ready to help. They’ve been instrumental in taking my business to the next level, and I’m excited for our future collaboration.",
         },
     ];
 
