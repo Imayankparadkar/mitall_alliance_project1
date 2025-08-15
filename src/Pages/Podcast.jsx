@@ -6,7 +6,7 @@ const Podcast = () => {
       <div>
         <img src="/Core/Divider.png" alt="Divider" />
       </div>
-      <div className="px-5 mt-1 sm:px-20 w-full bg-cover min-h-screen bg-center py-10">
+      <div className="px-5 mt-1 sm:px-20 w-full bg-cover min-h-180 bg-center py-8">
         <div className="text-center mb-10">
           <h1 className="text-[#D0A151] text-4xl sm:text-[45px] font-bold uppercase">
             PODCASTS
@@ -18,7 +18,7 @@ const Podcast = () => {
           />
         </div>
 
-        <div className="flex flex-col lg:flex-row items-center mt-10 lg:mt-30 justify-center gap-10 lg:gap-30">
+        <div className="flex flex-col lg:flex-row items-center mt-10 lg:mt-18 justify-center gap-10 lg:gap-30">
           <div className="relative shadow-lg rounded-md">
             <img
               src="/Core/rec.png"
@@ -32,7 +32,7 @@ const Podcast = () => {
             />
           </div>
 
-          <div className="max-w-[500px] text-left mt-6 lg:mt-0 px-2">
+          <div className="max-w-[500px] text-left mt-6  px-2">
             <h2 className="text-[36px] sm:text-[30px] lg:text-[50px] font-bold text-black leading-snug lg:leading-tight">
               A podcast for <br className="hidden lg:block" /> makers and
               entrepreneurs

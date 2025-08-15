@@ -10,7 +10,8 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-8 sm:px-20">
+      {/* ✨ MODIFICATION: The main grid now has a gap on mobile too */}
+      <div className="grid grid-cols-1 md:grid-cols-5 gap-y-10 gap-x-8 sm:px-20">
         {/* About Section */}
         <div className="md:col-span-2">
           <div className="flex items-center gap-2 mb-4">
@@ -47,7 +48,6 @@ const Footer = () => {
             </span>
             <h2 className="text-[#CC9A48] font-bold text-lg">Sarthak Mittal</h2>
           </div>
-          {/* ✨ FIX: Changed sm:w-[300px] to sm:max-w-[300px] */}
           <p className="text-gray-300 text-sm text-justify leading-relaxed sm:max-w-[300px]">
             Sarthak Group of Companies provides the best business solutions,
             helping businesses thrive through strategic and technical
@@ -57,39 +57,43 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Pages Section */}
-        <div>
-          <h3 className="text-lg font-bold mb-4">Pages</h3>
-          <ul className="space-y-2 text-gray-300 text-sm">
-            {[
-              "Home",
-              "Services",
-              "Courses",
-              "Blog Insight",
-              "Contact",
-              "Term & Condition",
-            ].map((page, i) => (
-              <li key={i} className="hover:text-[#CC9A48] cursor-pointer">
-                {page}
-              </li>
-            ))}
-          </ul>
-        </div>
+        {/* ✨ NEW: Wrapper for Pages and Company to control mobile layout */}
+        <div className="grid grid-cols-2 gap-8 md:contents">
+          {/* Pages Section */}
+          <div>
+            <h3 className="text-lg font-bold mb-4">Pages</h3>
+            <ul className="space-y-2 text-gray-300 text-sm">
+              {[
+                "Home",
+                "Services",
+                "Courses",
+                "Blog Insight",
+                "Contact",
+                "Term & Condition",
+              ].map((page, i) => (
+                <li key={i} className="hover:text-[#CC9A48] cursor-pointer">
+                  {page}
+                </li>
+              ))}
+            </ul>
+          </div>
 
-        {/* Company Section */}
-        <div>
-          <h3 className="text-lg font-bold mb-4">Company</h3>
-          <ul className="space-y-2 text-gray-300 text-sm">
-            {["Careers", "Support", "Price & Plans"].map((company, i) => (
-              <li key={i} className="hover:text-[#CC9A48] cursor-pointer">
-                {company}
-              </li>
-            ))}
-          </ul>
+          {/* Company Section */}
+          <div>
+            <h3 className="text-lg font-bold mb-4 text-right">Company</h3>
+            <ul className="space-y-2 text-gray-300 text-sm text-right">
+              {["Careers", "Support", "Price & Plans"].map((company, i) => (
+                <li key={i} className="hover:text-[#CC9A48] cursor-pointer">
+                  {company}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
         {/* Get In Touch Section */}
-        <div>
+        {/* ✨ MODIFICATION: Added text-center for mobile view */}
+        <div className="text-center md:text-left">
           <h3 className="text-lg font-bold mb-4">Get In Touch</h3>
           <div className="text-sm space-y-3">
             <div>
@@ -100,13 +104,15 @@ const Footer = () => {
             </div>
             <div>
               <p className="font-bold">Sub Office</p>
-              <p className="text-gray-300">Colorado Springs, Colorado United States</p>
+              <p className="text-gray-300">
+                Colorado Springs, Colorado United States
+              </p>
             </div>
           </div>
         </div>
       </div>
 
-      {/* ✨ IMPROVEMENT: Improved responsive layout for the copyright section */}
+      {/* Improved responsive layout for the copyright section */}
       <div className="border-t border-gray-700 mt-10 pt-5 flex flex-col sm:flex-row sm:justify-between items-center gap-4">
         <p className="text-[10px] sm:text-sm text-gray-300 text-center sm:text-left">
           Copyright By ©{" "}

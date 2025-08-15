@@ -7,7 +7,7 @@ const Book = () => {
       <div className="">
         <img src="/Core/BDivider.png" alt="Divider" />
       </div>
-      <div className="bg-black py-16 px-5 sm:px-20">
+      <div className="bg-black py-5 px-5 sm:px-20">
         <div className="flex flex-col lg:flex-row h-auto lg:h-[650px] justify-center items-center gap-14 lg:gap-20">
           <div className="shadow-lg border-4 mt-5 border-[#D0A151] rounded-md overflow-hidden hover:scale-105 transition-transform duration-300">
             <img

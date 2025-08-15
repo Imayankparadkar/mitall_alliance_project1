@@ -3,7 +3,7 @@ import React from 'react'
 const SectionFour = () => {
     return (
         <div>
-            <div className="sm:h-[600px] h-[700px]  bg-black px-4 sm:px-10 mt-10 flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-10">
+            <div className="sm:h-[600px] h-[700px]  bg-black px-4 sm:px-10 mt-8  flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-10">
 
 
                 <div className="flex justify-center">
@@ -19,7 +19,7 @@ const SectionFour = () => {
                         From BadBusiness to BADVERSE
                     </h1>
 
-                    <div className="text-white max-w-full sm:max-w-lg lg:w-xl space-y-4 sm:space-y-6 lg:space-y-8 text-sm sm:text-base leading-relaxed px-2 lg:px-0">
+                    <div className="text-white mb-15 max-w-full sm:max-w-lg lg:w-xl space-y-4 sm:space-y-6 lg:space-y-8 text-sm sm:text-base leading-relaxed px-2 lg:px-0">
                         <p>
                             <strong>2024</strong> changed everything.
                         </p>

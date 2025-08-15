@@ -168,7 +168,7 @@ const SuccessMatrix = () => {
 
     return (
         <>
-            <div className="h-270 bg-black sm:mt-[46px] hidden sm:block">
+            <div className="h-250 bg-black sm:mt-[46px] hidden sm:block">
                  {/* Divider */}
             <div className="">
                 <img

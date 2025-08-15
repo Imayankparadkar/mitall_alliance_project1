@@ -11,7 +11,7 @@ const ResultConsistent = () => {
 
     return (
         <div
-            className="flex px-20 w-full justify-center sm:h-screen h-full bg-cover bg-center relative"
+            className="flex px-20 w-full justify-center sm:h-180 h-full bg-cover bg-center relative"
             style={{
                 backgroundImage: "url('/ConsistentMatrix/bg.png')",
             }}

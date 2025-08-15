@@ -34,7 +34,7 @@ const Section3 = () => {
                 </div>
 
                 {/* ✅ Image Section */}
-                <div className="mt-4 lg:mt-0 flex justify-center">
+                <div className="mt-4 lg:mt-0 flex justify-center mb-6">
                     <img
                         src="/Core/Team.png"
                         alt="Team"

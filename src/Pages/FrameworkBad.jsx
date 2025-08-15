@@ -45,7 +45,7 @@ const FrameworkBad = () => {
                 />
             </div>
 
-            <div className="flex px-6 sm:px-20 w-full justify-center sm:h-screen h-full bg-cover bg-center relative mb-30">
+            <div className="flex px-6 sm:px-20 w-full justify-center sm:h-170 h-full bg-cover bg-center relative mb-20">
                 <div className="relative z-10">
                     {/* Title */}
                     <h1
