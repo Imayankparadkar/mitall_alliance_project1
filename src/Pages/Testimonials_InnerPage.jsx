@@ -36,7 +36,7 @@ const testimonialData = [
     },
     {
         id: 5,
-        image: "/Testimonials/testimonial6.png",
+        image: "/Testimonials/testimonial7.png",
         name: "Andriana Nunez",
         role: "Delivering Tangible Results",
         review: "In just a brief interaction, Sarthak Mittal completely shifted how I view branding. He reminded me that a powerful brand and authentic voice start with purpose, not just a portfolio. Through real examples, he showed me what it truly means to showcase your essence — not just what you do, but who you are. The clarity he brought to this concept was incredible, and his approach made the idea feel both inspiring and attainable.",
@@ -44,7 +44,7 @@ const testimonialData = [
     },
     {
         id: 6,
-        image: "/Testimonials/testimonial6.png",
+        image: "/Testimonials/testimonial8.png",
         name: "Divyansh Agarwal",
         role: "Solution Principal @HighRadius | Student at Chandigarh University | Machine Learning & Python Enthusiast | Former Secretary @IEEE CUSB & Eloquence Consortium | Aspiring Soft Skills Coach",
         review: "I had the absolute privilege of working under Mr. Sarthak Mittal during my internship at BADVERSE.IN, where he was not just a mentor but also a great friend and guide. Meeting him in person at BAD Talks: The CEO Summit 2025 was truly inspiring, as I witnessed firsthand his passion, dedication, and visionary leadership in action. Throughout my internship, he consistently provided guidance, support, and encouragement, helping me navigate challenges with confidence and turning even the toughest moments into valuable learning experiences.",
@@ -52,7 +52,7 @@ const testimonialData = [
     },
     {
         id: 7,
-        image: "/Testimonials/testimonial6.png",
+        image: "/Testimonials/testimonial9.png",
         name: "Bruno Salazar Molinero",
         role: "Creator @Brunospeaks.com | Human-centered Native Spanish Coach | 5+ Years Experience",
         review: "Sarthak and his team in Mittal are one of a kind. They came out of nowhere, and are helping me to get my business to the next level. Professional, trustworthy, and always helpful. I'm looking forward to see where our collaboration in the future will take us.",
@@ -60,7 +60,7 @@ const testimonialData = [
     },
     {
         id: 8,
-        image: "/Testimonials/testimonial6.png",
+        image: "/Testimonials/testimonial10.png",
         name: "Kartik Sharma",
         role: "Simplifying Artificial Intelligence for everyone!",
         review: "I had the privilege of being featured on a podcast hosted by Sarthak, and it was an inspiring experience to witness his passion for making a difference in the lives of young people. Sarthak is a remarkable young entrepreneur who is not just focused on his own growth but is deeply committed to uplifting the youth community by bridging the gap between academia and industry. His ability to create opportunities, foster meaningful connections, and share knowledge through his platforms is truly commendable, and during our podcast discussion on AI, his knack for engaging conversations and drawing out valuable insights was evident.",
@@ -68,7 +68,7 @@ const testimonialData = [
     },
     {
         id: 9,
-        image: "/Testimonials/testimonial6.png",
+        image: "/Testimonials/testimonial11.png",
         name: "Sahil Kumar Nagpal",
         role: "International Life Coach | Best Selling Author | Keynote Speaker | Executive Coach To Leaders | Unconventional Leadership Trainer | Founder @ Optimum Living Media",
         review: "Sarthak is a very dynamic, down to earth yet proactive individual. His sincerity and resilience outshines his experience. I did a podcast with him and his questions were very good. Good questions lead to a good show. He is a visionary with a doubt. I appreciate him for his work and wish him great luck for the future.",
@@ -76,7 +76,7 @@ const testimonialData = [
     },
     {
         id: 10,
-        image: "/Testimonials/testimonial6.png",
+        image: "/Testimonials/testimonial12.png",
         name: "Saurab Gupta",
         role: "Democratising Coaching with AI-Native Enterprise Platfrom ⚡ Founder at Enablerz || Making Coaching Accessible to Every Employee with Impact at Scale || Ex-Tata Motors, BNP, Ghari || Learner || Explorer || Poet",
         review: "I had the pleasure of being featured on Sarthak's podcast as the Founder of Enablerz, where we discussed my journey in building a B2B SaaS product for the global market. Sarthak is an incredibly talented and energetic podcaster, blogger, and speaker who brings a unique blend of enthusiasm, insight, and professionalism to his work. From the very beginning, his ability to ask thoughtful, engaging questions was evident, creating an environment that felt both comfortable and stimulating, allowing for an authentic exchange of ideas. His deep understanding of the tech and startup ecosystem added tremendous value to our conversation, making it not only informative but also inspiring for listeners.",
