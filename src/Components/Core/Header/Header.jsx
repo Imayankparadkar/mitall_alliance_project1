@@ -24,7 +24,7 @@ const Header = () => {
                 {/* Desktop Navigation (conditional on home page) */}
                 {isHome && (
                     <nav className="hidden md:flex items-center cursor-pointer space-x-14 text-white/80 font-medium">
-                        <Link to="/blogs" style={{ textDecoration: 'none' }} className="text-white/80 hover:text-white">Blogs</Link>
+                        <Link to="/blogs" style={{ textDecoration: 'none' }} className="text-white/80 hover:text-white">Success Stories</Link>
                         <Link to="/events" style={{ textDecoration: 'none' }} className="text-white/80 hover:text-white">Events</Link>
                         <Link to="/podcasts" style={{ textDecoration: 'none' }} className="text-white/80 hover:text-white">Podcasts</Link>
                         {/* <Link to="/pricing" style={{ textDecoration: 'none' }} className="text-white/80 hover:text-white">Pricing</Link> */}
@@ -89,7 +89,7 @@ const Header = () => {
                     {/* Mobile Navigation (conditional on home page) */}
                     {isHome && (
                         <nav className="flex flex-col space-y-6 text-white text-lg font-semibold">
-                            <Link to="/blogs" style={{ textDecoration: 'none' }} className="text-white hover:text-white" onClick={() => setIsOpen(false)}>Blogs</Link>
+                            <Link to="/blogs" style={{ textDecoration: 'none' }} className="text-white hover:text-white" onClick={() => setIsOpen(false)}>Success Stories</Link>
                             <Link to="/events" style={{ textDecoration: 'none' }} className="text-white hover:text-white" onClick={() => setIsOpen(false)}>Events</Link>
                             <Link to="/podcasts" style={{ textDecoration: 'none' }} className="text-white hover:text-white" onClick={() => setIsOpen(false)}>Podcasts</Link>
                             <Link to="/pricing" style={{ textDecoration: 'none' }} className="text-white hover:text-white" onClick={() => setIsOpen(false)}>Pricing</Link>

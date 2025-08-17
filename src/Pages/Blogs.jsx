@@ -46,10 +46,10 @@ const Blogs = () => {
             className="text-4xl font-bold inline-block m-0 pb-2"
             style={{ color: brandGold }}
           >
-            BLOGS
+            Success Stories
           </h2>
           <div
-            className="h-2 w-[150px] mx-auto"
+            className="h-2 w-[300px] mx-auto"
             style={{ backgroundColor: brandGold }}
           ></div>
         </div>
