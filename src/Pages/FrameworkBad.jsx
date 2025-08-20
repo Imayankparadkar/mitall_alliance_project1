@@ -52,14 +52,14 @@ const FrameworkBad = () => {
                         className="text-center text-transparent bg-clip-text bg-gradient-to-r 
                     from-[#D0A151] via-[#DCB56C] via-[#E6C584] 
                     via-[#DDB56D] to-[#CE9D4B] 
-                    text-2xl sm:text-[50px] font-bold w-full mt-15 uppercase"
+                    text-2xl sm:text-[48px] font-bold w-full mt-15 uppercase"
                     >
                         I use “bad” framework to solve problems
                     </h1>
                     <div>
                         <img
                             src="/ConsistentMatrix/border.png"
-                            className="sm:w-[1270px] w-full mt-2"
+                            className="sm:w-[1230px] w-full mt-2"
                             alt="Border"
                         />
                     </div>
