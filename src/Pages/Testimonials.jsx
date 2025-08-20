@@ -15,7 +15,7 @@ const Testimonials = () => {
             id: 2,
             name: "Priya Sharma",
             role: "Leadership Coach",
-            avatar: "/Core/Avatar.png",
+            avatar: "/Core/Avatar1.jpeg",
             quote:
                 "During my internship at Mittal Alliance, working with Mr. Sarthak Mittal was truly inspiring. His dedication, work ethic, and genuine interest in learning and guiding others make him not just a capable professional, but also a thoughtful leader and inspiring mentor.",
         },
@@ -23,7 +23,7 @@ const Testimonials = () => {
             id: 3,
             name: "Arjun Mehta",
             role: "CEO | Visionary Leader",
-            avatar: "/Core/Avatar.png",
+            avatar: "/Core/Avatar2.jpeg",
             quote:
                 "Sarthak and his team at Mittal are exceptional—professional, trustworthy, and always ready to help. They’ve been instrumental in taking my business to the next level, and I’m excited for our future collaboration.",
         },

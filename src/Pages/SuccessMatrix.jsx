@@ -15,7 +15,6 @@ const Card = ({
         threshold: 0.1,
     });
 
-    // We've updated the logic for applying animation and hover classes
     const cardClasses = `
         relative w-[300px] overflow-hidden
         transform transition-all duration-500 ease-in-out
@@ -30,10 +29,9 @@ const Card = ({
     return (
         <div
             ref={ref}
-            className={cardClasses.trim()} // .trim() cleans up any extra whitespace
+            className={cardClasses.trim()}
             style={{ transitionDelay: `${animationDelay}ms` }}
         >
-            {/* The rest of your Card JSX remains the same */}
             <img src={polygon} alt="Success Story" className="w-[250px] relative" />
             
             {layoutType === "default" && (
@@ -78,7 +76,7 @@ const Card = ({
                         <img
                             src={image}
                             alt="Success Matrix"
-                            className="object-left object-cover h-[180px] ml-4"
+                            className="object-contain h-[180px] ml-4"
                         />
                     </div>
                 </>
@@ -103,7 +101,7 @@ const SuccessMatrix = () => {
             image: "/SuccessMatrix/c2.png",
             title: ["15,000,000+ People", "Reached"],
             description:
-                "Over 1.5 Crore cumulative digital impressions across platforms  through branding, education, and marketing campaigns.",
+                "Over 1.5 Crore cumulative digital impressions across platforms  through branding, education, and marketing campaigns.",
         },
         {
             id: 3,
@@ -111,7 +109,7 @@ const SuccessMatrix = () => {
             image: "/SuccessMatrix/c3.png",
             title: ["12,000+ Newsletter", "Subscribers"],
             description:
-                "Consistent audience consuming insights, updates, and strategies  via high-engagement email campaigns.",
+                "Consistent audience consuming insights, updates, and strategies  via high-engagement email campaigns.",
         },
         {
             id: 4,
@@ -119,7 +117,7 @@ const SuccessMatrix = () => {
             image: "/SuccessMatrix/c4.png",
             title: ["50,000+ Students", "Impacted"],
             description:
-                "Learners reached through workshops, mentorships, webinars,  and academic outreach programs.",
+                "Learners reached through workshops, mentorships, webinars,  and academic outreach programs.",
         },
     ];
 
@@ -130,7 +128,7 @@ const SuccessMatrix = () => {
             image: "/SuccessMatrix/c6.png",
             title: ["3,600+ YouTube", "Subscribers"],
             description:
-                "Educational video content creating continuous impact and  community growth.",
+                "Educational video content creating continuous impact and  community growth.",
         },
         {
             id: 2,
@@ -138,7 +136,7 @@ const SuccessMatrix = () => {
             image: "/SuccessMatrix/c7.png",
             title: ["75+ Global Projects", "Delivered"],
             description:
-                "Successful branding, digital, and consulting projects executed  across India, USA, UK, Spain, Dubai, and Australia.",
+                "Successful branding, digital, and consulting projects executed  across India, USA, UK, Spain, Dubai, and Australia.",
         },
         {
             id: 3,
@@ -146,7 +144,7 @@ const SuccessMatrix = () => {
             image: "/SuccessMatrix/c8.png",
             title: ["2 Incorporated", "Companies"],
             description:
-                "Leading ventures in brandtech, digital transformation, and  consulting.",
+                "Leading ventures in brandtech, digital transformation, and  consulting.",
         },
         {
             id: 4,
@@ -154,7 +152,7 @@ const SuccessMatrix = () => {
             image: "/SuccessMatrix/c9.png",
             title: ["1 Community", "Platform (Badverse)"],
             description:
-                "Empowering solopreneurs, students, and creators with  mentorship and digital tools.",
+                "Empowering solopreneurs, students, and creators with  mentorship and digital tools.",
         },
         {
             id: 5,
@@ -162,30 +160,24 @@ const SuccessMatrix = () => {
             image: "/SuccessMatrix/c10.png",
             title: ["1 Handicraft Firm", "(Anjucreations)"],
             description:
-                "Promoting Indian craftsmanship globally through sustainable and  ethical commerce.",
+                "Promoting Indian craftsmanship globally through sustainable and  ethical commerce.",
         },
     ];
 
     return (
-        <>
-            <div className="h-250 bg-black sm:mt-[46px] hidden sm:block">
-                 {/* Divider */}
-            <div className="">
-                <img
-                    src="/Core/BDivider.png"
-                    className=""
-                    alt="Divider"
-                />
-            </div>
-
+        <div className="bg-black">
+            {/* --- DESKTOP VIEW --- */}
+            {/* Hidden on small screens, visible on 'sm' screens and larger */}
+            <div className="hidden sm:block sm:mt-[46px]">
+                <div>
+                    <img src="/Core/BDivider.png" alt="Divider" />
+                </div>
                 <div className="w-full justify-center px-20 uppercase mt-5 font-bold">
                     <h1 className="text-[#D0A151] text-[50px]">Success Matrix</h1>
                     <div>
-                        <img src="/SuccessMatrix/border.png" className="w-[500px]" />
+                        <img src="/SuccessMatrix/border.png" className="w-[500px]" alt="Border" />
                     </div>
-
-
-                    <div className="bg-black px-35 relative w-full justify-center grid grid-cols-4 gap-6 mt-6">
+                    <div className="px-35 relative w-full justify-center grid grid-cols-4 gap-6 mt-6">
                         {cardsOne.map((card) => (
                             <Card
                                 key={card.id}
@@ -195,9 +187,7 @@ const SuccessMatrix = () => {
                             />
                         ))}
                     </div>
-
-
-                    <div className="relative -top-15 ml-2 w-full justify-center grid grid-cols-5 ">
+                    <div className="relative -top-15 ml-2 w-full justify-center grid grid-cols-5">
                         {cardsTwo.map((card) => (
                             <Card key={card.id} {...card} layoutType="alt" topImage="top-20" />
                         ))}
@@ -205,43 +195,35 @@ const SuccessMatrix = () => {
                 </div>
             </div>
 
-
-            {/* Mobile Design */}
-
-            <>
-                <div className="h-full w-full justify-center bg-black  sm:hidden">
-                    <div className="">
-                        <img src="/SuccessMatrix/page-divider.png" className="w-[500px] h-[15px] " />
+            {/* --- MOBILE VIEW --- */}
+            {/* Visible by default, hidden on 'sm' screens and larger */}
+            <div className="sm:hidden h-full w-full justify-center">
+                <div>
+                    <img src="/SuccessMatrix/page-divider.png" className="w-full h-[15px]" alt="Page Divider" />
+                </div>
+                <div className="w-full justify-center px-4 uppercase mt-5 font-bold">
+                    <h1 className="text-[#D0A151] text-2xl mt-10">Success Matrix</h1>
+                    <div>
+                        <img src="/SuccessMatrix/border.png" className="w-full max-w-[500px]" alt="Border" />
                     </div>
-
-                    <div className="w-full justify-center px-20 uppercase mt-5 font-bold">
-                        <h1 className="text-[#D0A151] text-2xl mt-10 sm:text-[50px]">Success Matrix</h1>
-                        <div>
-                            <img src="/SuccessMatrix/border.png" className="w-[500px]" />
-                        </div>
-
-
-                        <div className="bg-black relative w-full justify-center grid grid-cols-1 mt-6">
-                            {cardsOne.map((card) => (
-                                <Card
-                                    key={card.id}
-                                    {...card}
-                                    layoutType="default"
-                                    topImage="top-8"
-                                />
-                            ))}
-                        </div>
-
-
-                        <div className="relative -top-15 space-y-10 mt-30 w-full justify-center grid grid-cols-1 ">
-                            {cardsTwo.map((card) => (
-                                <Card key={card.id} {...card} layoutType="alt" topImage="top-20" />
-                            ))}
-                        </div>
+                    <div className="relative w-full flex flex-col items-center mt-6">
+                        {cardsOne.map((card) => (
+                            <Card
+                                key={card.id}
+                                {...card}
+                                layoutType="default"
+                                topImage="top-5"
+                            />
+                        ))}
+                    </div>
+                    <div className="relative -top-15 mt-10 flex flex-col items-center space-y-10">
+                        {cardsTwo.map((card) => (
+                            <Card key={card.id} {...card} layoutType="alt" topImage="top-20" />
+                        ))}
                     </div>
                 </div>
-            </>
-        </>
+            </div>
+        </div>
     );
 };
 
