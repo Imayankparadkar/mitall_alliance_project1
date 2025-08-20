@@ -99,7 +99,7 @@ const PodcastsDetail = () => {
 
         <button
           onClick={handleBackClick}
-          className="flex items-center bg-transparent border-none font-bold cursor-pointer text-2xl"
+          className="flex items-center bg-transparent border-none font-bold cursor-pointer text-3xl"
           style={{ color: brandGold }}
         >
           <ArrowLeft size={18} className="mr-2" />
