@@ -21,6 +21,7 @@ import Blog from "./Pages/Blog";
 import GreatTogether from "./Pages/GreatTogether";
 import Awards from "./Pages/Awards";
 import TedxSection from "./Pages/TedxSection";
+// import Stories from "./Pages/Stories";
 
 // Import REAL pages
 import BlogsPage from "./Pages/Blogs";
@@ -28,7 +29,7 @@ import BlogDetail from "./Pages/BlogDetail";
 import PodcastsDetail from "./Pages/PodcastsDetail";
 import EventsPage from "./Pages/Events";
 import PodcastsPage from "./Pages/Podcasts";
-// import PricingPage from "./Pages/Pricing";
+// import StoriesPage from "./Pages/Stories";
 import BooksPage from "./Pages/Books";
 import MentorsPage from "./Pages/Mentors";
 import HistoryPage from "./Pages/History";
@@ -70,6 +71,9 @@ const App = () => {
         <Routes>
           {/* Main landing page */}
           <Route path="/" element={<HomePage />} />
+
+        
+          {/* <Route path="/pricing" element={<Stories />} /> */}
 
           {/* Route for the main services list */}
           <Route path="/" element={<Services />} />

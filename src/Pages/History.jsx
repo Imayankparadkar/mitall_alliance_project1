@@ -80,7 +80,7 @@ const History = () => {
                 <img src="/History/history1.png" alt="Asian-African Leadership Forum" className="w-full h-auto object-cover" />
             </div>
             
-            <img src="/History/history2.png" alt="arrow divider" className="w-full block -mt-px mb-12 md:mb-16" />
+            <img src="/History/history2.png" alt="arrow divider" className="w-full block -mt-px" />
 
             {/* --- Main Content Section --- */}
             <main className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">

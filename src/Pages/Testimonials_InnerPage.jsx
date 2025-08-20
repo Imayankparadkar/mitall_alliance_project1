@@ -112,8 +112,8 @@ const TestimonialCard = ({ image, name, role, review, review1, isReversed }) => 
                 alt="Quote Start"
             />
 
-            <p className="text-base lg:text-lg italic mb-4 text-gray-700">"{review}"</p>
-            {review1 && <p className="text-base lg:text-lg italic mb-4 text-gray-700">"{review1}"</p>}
+            <p className="text-base lg:text-lg  mb-4 text-gray-700">"{review}"</p>
+            {review1 && <p className="text-base lg:text-lg  mb-4 text-gray-700">"{review1}"</p>}
             
             <h4 className="font-bold text-xl text-gray-900">{name}</h4>
             <p className="font-medium text-sm text-gray-600">{role}</p>
@@ -159,7 +159,7 @@ const Testimonials_InnerPage = () => {
                     </div>
                 </div>
 
-            <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-28">
+            <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-15">
                 
 
                 {/* Page Heading Section */}
