@@ -61,7 +61,7 @@ const Mentors = () => {
           {/* Main Heading */}
           <div className="text-center mb-10 ">
             <h1
-              className="inline-block text-3xl font-bold pb-2 pt-11"
+              className="inline-block text-3xl font-bold pb-2 pt-12"
               style={{
                 color: "rgba(208, 161, 81, 1)",
                 borderBottom: "4px solid rgba(208, 161, 81, 1)",

@@ -34,16 +34,10 @@ const Books = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 ">
 
           {/* 3. "Discover My Books" Heading */}
-          <div className="text-center mb-12">
+          <div className="text-center mb-11">
             <h2 className="text-4xl md:text-4xl font-bold" style={headingStyle}>
               Discover My Books
             </h2>
-            <img 
-              src="/Books/line.png" 
-              alt="Underline" 
-              className="mx-auto mt-2 h-2 w-48"
-              onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/200x8/d0a151/d0a151?text='; }}
-            />
           </div>
 
           {/* 4. Main Book Section based on Screenshot */}

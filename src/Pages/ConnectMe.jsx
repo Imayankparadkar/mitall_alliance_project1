@@ -23,7 +23,7 @@ const ConnectMe = () => {
             </div>
 
             {/* Main Section */}
-            <div className="flex px-5 sm:px-20 w-full justify-center h-[480px] bg-cover bg-center relative mb-26 sm:mb-0">
+            <div className="flex px-5 sm:px-20 w-full justify-center h-[430px] bg-cover bg-center relative mb-26 sm:mb-0">
                 <div className="absolute inset-0"></div>
 
                 <div className="relative z-10 text-center">
@@ -31,7 +31,7 @@ const ConnectMe = () => {
                         className="text-transparent bg-clip-text bg-gradient-to-r 
                        from-[#D0A151] via-[#DCB56C] via-[#E6C584] 
                        via-[#DDB56D] to-[#CE9D4B] 
-                       text-2xl sm:text-[50px] font-bold w-xs sm:w-full mt-15 uppercase"
+                       text-2xl sm:text-[40px] font-bold w-xs sm:w-full mt-10 uppercase"
                     >
                         Connect with me
                     </h1>
@@ -39,13 +39,13 @@ const ConnectMe = () => {
                     <div>
                         <img
                             src="/ConsistentMatrix/border.png"
-                            className="w-[250px] sm:w-[510px] h-[8px] mx-auto"
+                            className="w-[250px] sm:w-[440px] h-[8px] mx-auto"
                             alt="Border"
                         />
                     </div>
 
                     {/* Connection Box */}
-                    <div className="flex justify-center items-center ">
+                    <div className="flex justify-center items-center">
                         <div className="flex flex-col items-center mt-12 w-full sm:w-[1000px] h-auto py-6 border border-[#CE9D4B] rounded-lg bg-white/10">
                             <span className="text-lg text-[#D0A151] font-semibold uppercase">
                                 Connect with Sarthak
