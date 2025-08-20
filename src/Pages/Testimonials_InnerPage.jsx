@@ -165,13 +165,13 @@ const Testimonials_InnerPage = () => {
                 {/* Page Heading Section */}
                 <div className="text-center mb-10 md:mb-15">
                     <h1 
-                        className="text-5xl md:text-5xl font-extrabold uppercase tracking-wider"
+                        className="text-4xl md:text-4xl font-extrabold uppercase "
                         style={{ color: '#D0A151' }}
                     >
                         Voices Shaping Mittal Alliance Industries' Legacy
                     </h1>
                     <p 
-                        className="text-lg md:text-4xl mt-2"
+                        className="text-sm md:text-4xl mt-2"
                         style={{ color: '#808080' }}
                     >
                         Real Stories, Real Impact at Mittal Alliance
