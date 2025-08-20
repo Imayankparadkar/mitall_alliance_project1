@@ -158,14 +158,14 @@ const About = () => {
 
                 {/* ANIMATED MOBILE IMAGE */}
                 <div className={`
-                    absolute top-65 right-[-22px]
+                    absolute top-75 right-[-75px]
                     transition-all ease-in-out duration-1000
                     ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-20'}
                 `}>
                     <img
-                        src='/About/mobile-sarthak.png'
+                        src='/About/sarthak.png'
                         alt='Sarthak Mittal'
-                        className='w-[140px]'
+                        className='w-[230px]'
                     />
                 </div>
                 
