@@ -57,8 +57,10 @@ const FAQs = () => {
             {/* --- Main Content Section --- */}
             <main className="max-w-7xl mx-auto py-14 px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#D0A151]">CLARITY, INSIGHT, AND INSPIRATION FOR ALL</h2>
-                    <div className="h-1 w-220 bg-[#D0A151] mx-auto mt-2"></div>
+                <div className="text-center mb-16">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#D0A151] underline">CLARITY, INSIGHT, AND INSPIRATION FOR ALL</h2>
+                </div>
+                    
                 </div>
 
                 {/* --- FAQ Grid --- */}

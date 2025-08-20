@@ -30,17 +30,17 @@ const Events = () => {
 
 
       {/* Main Content */}
-      <main className="max-w-[1600px] mx-auto bg-transparent pt-24 px-4 pb-8 md:pt-12 md:px-8 md:pb-16">
+      <main className="max-w-[1600px] mx-auto bg-transparent pt-12 px-4 pb-8 md:pt-12 md:px-8 md:pb-16">
         {/* Section Title */}
         <div className="text-center mb-12">
           <h2 
-            className="text-4xl font-bold inline-block m-0 pb-2"
+            className="text-3xl md:text-3xl font-bold inline-block m-0 pb-2"
             style={{ color: brandGold }}
           >
             EVENTS
           </h2>
           <div 
-            className="h-2 w-[150px] mx-auto"
+            className="h-2 w-[130px] mx-auto"
             style={{ backgroundColor: brandGold }}
           ></div>
         </div>

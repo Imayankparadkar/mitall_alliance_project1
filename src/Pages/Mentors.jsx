@@ -52,16 +52,16 @@ const Mentors = () => {
         {/* Main container */}
         <div>
           {/* Top Image Banner */}
-          <div className="flex flex-wrap justify-center items-center mb-14">
+          <div className="flex flex-wrap justify-center items-center ">
             <img src="/Mentor/line.png" />
             <img src="/Mentor/mentor1.png" />
             <img src="/Mentor/mentor2.png" />
           </div>
 
           {/* Main Heading */}
-          <div className="text-center mb-14 mt-14">
+          <div className="text-center mb-10 ">
             <h1
-              className="inline-block text-4xl font-bold pb-2"
+              className="inline-block text-3xl font-bold pb-2 pt-11"
               style={{
                 color: "rgba(208, 161, 81, 1)",
                 borderBottom: "4px solid rgba(208, 161, 81, 1)",
@@ -87,7 +87,7 @@ const Mentors = () => {
                   </div>
 
                   {/* Mentor Description */}
-                  <div className="max-w-3xl mx-auto text-justify text-gray-700 leading-relaxed px-4">
+                  <div className="max-w-3xl mx-auto text-justify text-gray-700 leading-relaxed px-4 pt-4 pb-8">
                     <p>{mentor.description}</p>
                   </div>
                 </div>
@@ -95,7 +95,7 @@ const Mentors = () => {
                 {index < mentorProfiles.length - 1 && (
                   <div className="flex justify-center px-4">
                     <hr
-                      className="w-full max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-3xl xl:max-w-3xl border-t"
+                      className="w-full max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-3xl xl:max-w-3xl border-t pt-8 "
                       style={{
                         borderColor: "rgba(115, 115, 115, 1)",
                         borderWidth: "px",
@@ -107,7 +107,7 @@ const Mentors = () => {
             ))}
           </div>
 
-          <hr className="border-t-2 border-[rgba(194,124,6,1)] my-16 md:my-24" />
+          <hr className="border-t-2 border-[rgba(194,124,6,1)] my-16 md:my-13" />
 
           {/* Mentor Image Grid */}
           <div className="flex flex-wrap justify-center gap-5 mt-20 py-5 mb-16">

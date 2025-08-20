@@ -62,7 +62,7 @@ const PodcastsDetail = () => {
         className="w-full block -mt-px"
       />
 
-      <main className="max-w-4xl mx-auto px-4 pt-16 pb-8 md:px-8 md:pt-24 md:pb-12">
+      <main className="max-w-4xl mx-auto px-4 pt-12 pb-8 md:px-8 md:pt-12 md:pb-12">
         <h1
           className="font-bold text-center mb-8 text-2xl md:text-4xl"
           style={{ color: brandGold }}
@@ -99,7 +99,7 @@ const PodcastsDetail = () => {
 
         <button
           onClick={handleBackClick}
-          className="flex items-center bg-transparent border-none font-bold cursor-pointer text-base"
+          className="flex items-center bg-transparent border-none font-bold cursor-pointer text-2xl"
           style={{ color: brandGold }}
         >
           <ArrowLeft size={18} className="mr-2" />
