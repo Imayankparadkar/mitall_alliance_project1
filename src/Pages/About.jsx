@@ -158,7 +158,7 @@ const About = () => {
 
                 {/* ANIMATED MOBILE IMAGE */}
                 <div className={`
-                    absolute top-75 right-[-75px]
+                    absolute top-75 right-[-68px]
                     transition-all ease-in-out duration-1000
                     ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-20'}
                 `}>
